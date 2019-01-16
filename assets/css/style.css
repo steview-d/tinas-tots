@@ -1,0 +1,119 @@
+/*------------------------------------------------------------Misc Crap-*/
+
+.tiny-space {
+    min-height: 100px;
+}
+
+.small-space {
+    min-height: 300px;
+}
+
+/*-----------------------------------------------------------Navigation-*/
+
+.navbar {
+    font-family: 'Autour One', cursive;
+    font-size: 1.15em;
+    font-weight: bold;
+    background-color: #ebccff;
+    background-color: rgba(153, 0, 255, 0.2);
+    text-align: center;
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5em;
+    color: red;
+}
+
+.navbar .navbar-brand:hover {
+    color: red;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff5cc;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+/*----------------------------------------------------Background Colors-*/
+
+.bg-color-about {
+    background-color: #ffffdd;
+}
+
+.bg-color-school-run {
+    background-color: #c0d5f7;
+}
+
+.bg-color-childcare {
+    background-color: #ffffdd;
+}
+
+.bg-color-meals {
+    background-color: #def7de;
+}
+
+/*---------------------------------------------------------------Footer-*/
+
+.footer-style {
+    background-color: #666;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social {
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.social li a {
+    text-decoration: none
+}
+
+.social li a i {
+    width: 40px;
+    height: 40px;
+    color: red;
+    font-size: 24px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    transition: 0.5s ease-in-out;
+}
+
+.social li a i:hover {
+    /*border-radius: 10%;
+    border: 1px solid #d0d0d0;*/
+    color: blue;
+}
+
+
+
