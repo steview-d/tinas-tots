@@ -20,8 +20,9 @@
 }
 
 /* Not supported in Edge or Safari */
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -160,11 +161,12 @@ html {
 .intro .btn-success {
     margin: 10px;
     white-space: normal;
-    font-size: 1.4em;
-    padding: 15px 24px;
+    font-size: 1.2em;
+    padding: 10px 16px;
     color: #fff;
     background-color: #56ce6e;
     border-color: #56ce6e;
+    border-radius: 30px;
     border: 0;
 }
 
@@ -188,7 +190,7 @@ html {
 .intro a .down-arrows:hover {
     color: #bbb;
     transform: translate(0, 10px);
-} 
+}
 
 /*----------------------------------------------------------------About-*/
 
@@ -284,21 +286,35 @@ html {
     color: blue;
 }
 
-/*-----------------------------------------------------------Animations-*/
+/*----------------------------------------------------------------Modal-*/
+
+.modal {
+    text-align: center;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal i {
+    color: #f49e42;
+}
 
 /*--------------------------------------------------------Media Queries-*/
 
-/*-----------------/*
-
-
-
-
-.box-outline {
-    border-radius: 5%;
-    border: 3px solid #f00;
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
 }
 
-.box-outline-blank {
-    border-radius: 5%;
-    border: 3px solid #555;
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 80%;
+    }
 }
