@@ -1,12 +1,52 @@
 /*------------------------------------------------------------Misc Crap-*/
 
 .tiny-space {
-    min-height: 100px;
+    min-height: 50px;
 }
 
 .small-space {
     min-height: 300px;
 }
+
+
+/*--------------------------------------------------------House Keeping-*/
+
+.row {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+}
+
+/* Not supported in Edge or Safari */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*----------------------------------------------------Background Colors-*/
+
+.bg-color-about {
+    background-color: #fff;
+}
+
+.bg-color-school-run {
+    background-color: #dbfeff;
+}
+
+.bg-color-childcare {
+    background-color: #ffffcc;
+}
+
+.bg-color-meals {
+    background-color: #def7de;
+}
+
+.bg-color-contact {
+    background-color: #fff;
+}
+
 
 /*-----------------------------------------------------------Navigation-*/
 
@@ -14,10 +54,24 @@
     font-family: 'Autour One', cursive;
     font-size: 1.15em;
     font-weight: bold;
-    background-color: #ebccff;
-    background-color: rgba(153, 0, 255, 0.2);
+    background-color: #eed9fc;
+    background-color: rgba(153, 0, 255, 0.8);
     text-align: center;
     border: 0;
+}
+
+.nav-bg-solid {
+    background-color: #eed9fc;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.nav-spacer {
+    min-height: 50px;
 }
 
 .navbar .navbar-brand {
@@ -63,22 +117,137 @@
     background-color: black;
 }
 
-/*----------------------------------------------------Background Colors-*/
+/*----------------------------------------------------------------Intro-*/
 
-.bg-color-about {
-    background-color: #ffffdd;
+.bg-fixed {
+    background-image: url("/assets/images/about/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    /* Removed top / left 0  & height 100% */
+    width: 100%;
+    z-index: -1;
 }
 
-.bg-color-school-run {
-    background-color: #c0d5f7;
+.dimmer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.bg-color-childcare {
-    background-color: #ffffdd;
+.spacer100vh {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.bg-color-meals {
-    background-color: #def7de;
+.jumbotron {
+    background-color: transparent;
+    font-family: 'Autour One', cursive;
+    color: #fff;
+}
+
+.intro .hr-divider {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.intro .btn-success {
+    margin: 10px;
+    white-space: normal;
+    font-size: 1.4em;
+    padding: 15px 24px;
+    color: #fff;
+    background-color: #56ce6e;
+    border-color: #56ce6e;
+    border: 0;
+}
+
+.intro .btn-success:hover,
+.intro .btn-success:focus,
+.intro .btn-success:active,
+.intro .btn-success:active:focus {
+    background-color: #48af5c;
+    border-color: #48af5c;
+    transition: 0.3s ease-in-out;
+    outline: 0;
+    border: 0;
+}
+
+.intro a .down-arrows {
+    font-size: 4em;
+    color: #fff;
+    transition: 1s;
+}
+
+.intro a .down-arrows:hover {
+    color: #bbb;
+    transform: translate(0, 10px);
+} 
+
+/*----------------------------------------------------------------About-*/
+
+.tina-pic {
+    background: url('/assets/images/about/tina_profile.png');
+    min-height: 400px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 40px 10px 30px 10px;
+}
+
+.about-text-wrapper {
+    margin: 40px 20px 30px 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-text-h {
+    margin-bottom: 20px;
+}
+
+.about-text-p {
+    font-size: 1.4em;
+}
+
+.services-box-wrapper {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    text-align: center;
+}
+
+.services-fa {
+    font-size: 4em;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.services-text-h {
+    margin-bottom: 20px;
+}
+
+.services-text-p {
+    font-size: 1.2em;
+}
+
+/*--------------------------------------------------------------Contact-*/
+
+.contact-text-wrapper {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.contact-text-h {
+    margin-bottom: 20px;
+}
+
+.contact-text-p {
+    font-size: 1.4em;
 }
 
 /*---------------------------------------------------------------Footer-*/
@@ -115,5 +284,21 @@
     color: blue;
 }
 
+/*-----------------------------------------------------------Animations-*/
+
+/*--------------------------------------------------------Media Queries-*/
+
+/*-----------------/*
 
 
+
+
+.box-outline {
+    border-radius: 5%;
+    border: 3px solid #f00;
+}
+
+.box-outline-blank {
+    border-radius: 5%;
+    border: 3px solid #555;
+}
