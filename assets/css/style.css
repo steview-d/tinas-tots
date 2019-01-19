@@ -9,23 +9,6 @@
 }
 
 
-/*--------------------------------------------------------House Keeping-*/
-
-.row {
-    display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    flex-wrap: wrap;
-}
-
-/* Not supported in Edge or Safari */
-
-html {
-    scroll-behavior: smooth;
-}
-
-
 /*----------------------------------------------------Background Colors-*/
 
 .bg-color-about {
@@ -43,11 +26,6 @@ html {
 .bg-color-meals {
     background-color: #def7de;
 }
-
-.bg-color-contact {
-    background-color: #fff;
-}
-
 
 /*-----------------------------------------------------------Navigation-*/
 
@@ -98,6 +76,7 @@ html {
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
+
 }
 
 .navbar-default .navbar-collapse {
@@ -118,7 +97,7 @@ html {
     background-color: black;
 }
 
-/*----------------------------------------------------------------Intro-*/
+/*----------------------------------------------Home | Background Image-*/
 
 .bg-fixed {
     background-image: url("/assets/images/about/bg.jpg");
@@ -128,19 +107,23 @@ html {
     position: fixed;
     /* Removed top / left 0  & height 100% */
     width: 100%;
-    z-index: -1;
+    z-index: -2;
 }
 
 .dimmer {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
-.spacer100vh {
+
+/*--------------------------------------------------------------Landing-*/
+
+.landing {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -183,6 +166,7 @@ html {
 
 .intro a .down-arrows {
     font-size: 4em;
+    margin-top: 20px;
     color: #fff;
     transition: 1s;
 }
@@ -204,7 +188,7 @@ html {
 }
 
 .about-text-wrapper {
-    margin: 40px 20px 30px 30px;
+    margin: 0px 20px 30px 30px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -236,20 +220,11 @@ html {
     font-size: 1.2em;
 }
 
-/*--------------------------------------------------------------Contact-*/
-
-.contact-text-wrapper {
-    margin: 10px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-.contact-text-h {
-    margin-bottom: 20px;
-}
-
-.contact-text-p {
-    font-size: 1.4em;
+.about-link {
+    display: block;
+    height: 50px;
+    margin-top: 50px;
+    visibility: hidden;
 }
 
 /*---------------------------------------------------------------Footer-*/
@@ -302,6 +277,33 @@ html {
     color: #f49e42;
 }
 
+/* Want to avoid !important override if at all possible?? */
+
+.modal-open {
+    padding: 0 !important;
+    overflow-y: auto;
+}
+
+/*--------------------------------------------------------House Keeping-*/
+
+.row {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+}
+
+/* Not supported in Edge or Safari */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
 /*--------------------------------------------------------Media Queries-*/
 
 @media screen and (min-width: 768px) {
@@ -318,3 +320,13 @@ html {
         width: 80%;
     }
 }
+
+
+/*
+
+spacings betweeen pic & about me text
+- create full row div to go between landing and pic/about sections to create
+space there, then pic/about sections have margin-bottom to create space between
+those and services.
+
+*/

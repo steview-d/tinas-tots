@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="assets/css/hover.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+<body data-spy="scroll" data-target="#myNavbar" data-offset="120" id="home">
+
+    <!--Navigation-->
+    <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top">
         <div class="nav-bg-solid"></div>
         <div class="container-fluid">
             <div class="navbar-header">
@@ -31,10 +33,10 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="navbar-collapse collapse" id="nav-collapse">
+            <div class="navbar-collapse collapse" id="nav-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Activities</a></li>
                     <li><a href="#">Media</a></li>
                     <li><a href="#">Reports</a></li>
@@ -44,114 +46,92 @@
         </div>
     </nav>
 
+    <!--Background Image-->
     <div class="bg-fixed"></div>
     <div class="dimmer"></div>
-    <div class="container-fluid spacer100vh">
-        <div class="row">
-            <div class="col-xs-12">
-                <section class="intro text-center jumbotron">
-                    <h1>OFSTED registered professional child minder</h1>
-                    <hr class="hr-divider">
-                    <h2 class="hidden-xs hidden-sm">Covering the Wednesbury & Bilston area</h2>
-                    <p>Call me now on <strong><span class="hvr-pulse-grow">07826 848 230</span></strong>, or</p>
-                    <p><button class="btn btn-success btn-lg" data-toggle='modal' data-target='#contactModal'>Get In Touch</button></p>
-                    <br /><br /><br /><br /><br /><br />
-                    <a href="#jump-to"><i class="fas fa-angle-double-down down-arrows"></i></a>
 
-                </section>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid" id="jump-to">
-        <div class="row bg-color-about">
-            <div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-1">
-                <div class="tina-pic"></div>
-            </div>
-            <div class="col-xs-12 col-md-8 col-lg-7">
-                <div class="about-text-wrapper">
-                    <h1 class="about-text-h">Hi, I'm Tina.</h1>
-                    <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam veniam doloremque ipsa quia quas consequuntur at, dicta dolore nam necessitatibus! Consequatur modi temporibus placeat sunt quasi, nihil sed eveniet est.</p>
-                    <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis a eligendi esse deleniti sint expedita animi perferendis sequi tenetur debitis ex eveniet inventore, accusamus ullam asperiores et rem rerum porro voluptate ad
-                        quo saepe aliquam voluptatem, sunt voluptatum? Perferendis, minima!</p>
-                    <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veritatis incidunt sed qui eos illum aliquid quisquam quidem in exercitationem.</p>
+    <!--Landing-->
+    <section id="landing-screen">
+        <div class="container-fluid landing">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="intro text-center jumbotron">
+                        <h1>OFSTED registered professional child minder</h1>
+                        <hr class="hr-divider">
+                        <h2 class="hidden-xs hidden-sm">Covering the Wednesbury & Bilston area</h2>
+                        <p>Call me now on <strong><span class="hvr-pulse-grow">07826 848 230</span></strong>, or</p>
+                        <p><button class="btn btn-success btn-lg" data-toggle='modal' data-target='#contactModal'>Get In Touch</button></p>
+                        <a href="#about"><i class="fas fa-angle-double-down down-arrows"></i></a>
+                    </div>
                 </div>
             </div>
-
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12 col-lg-4 col-lg-push-4 bg-color-childcare">
-                <div class="services-box-wrapper">
-                    <ul class="list-inline text-center services-fa">
-                        <i class="fas fa-baby"></i>
-                        <i>&nbsp&nbsp</i>
-                        <i class="fas fa-child"></i>
-                    </ul>
-                    <h1 class="services-text-h">Child Minding</h1>
-                    <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ab sed nobis sunt fugit ipsam aut aperiam repellat officia fuga, at eligendi quo rerum, quae maiores fugiat minima soluta animi.</p>
-                    <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit perspiciatis tempora similique voluptate veniam aspernatur explicabo earum quibusdam! Repellat, dolores.</p>
+    </section>
+
+    <!--About-->
+    <section id="about">
+        <span class="about-link"></span>
+        <div class="container-fluid">
+
+            <div class="row bg-color-about">
+                <div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-1">
+                    <div class="tina-pic"></div>
+                </div>
+                <div class="col-xs-12 col-md-8 col-lg-7">
+                    <div class="about-text-wrapper">
+                        <h1 class="about-text-h">Hi, I'm Tina.</h1>
+                        <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam veniam doloremque ipsa quia quas consequuntur at, dicta dolore nam necessitatibus! Consequatur modi temporibus placeat sunt quasi, nihil sed eveniet est.</p>
+                        <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis a eligendi esse deleniti sint expedita animi perferendis sequi tenetur debitis ex eveniet inventore, accusamus ullam asperiores et rem rerum porro voluptate
+                            ad quo saepe aliquam voluptatem, sunt voluptatum? Perferendis, minima!</p>
+                        <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veritatis incidunt sed qui eos illum aliquid quisquam quidem in exercitationem.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-4 col-lg-pull-4 bg-color-school-run small-space">
-                <div class="services-box-wrapper">
-                    <span class="services-fa">
+        </div>
+    </section>
+
+    <!--Services-->
+    <section id="services">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-4 col-lg-push-4 bg-color-childcare">
+                    <div class="services-box-wrapper">
+                        <ul class="list-inline text-center services-fa">
+                            <i class="fas fa-baby"></i>
+                            <i>&nbsp&nbsp</i>
+                            <i class="fas fa-child"></i>
+                        </ul>
+                        <h1 class="services-text-h">Child Minding</h1>
+                        <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ab sed nobis sunt fugit ipsam aut aperiam repellat officia fuga, at eligendi quo rerum, quae maiores fugiat minima soluta animi.</p>
+                        <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit perspiciatis tempora similique voluptate veniam aspernatur explicabo earum quibusdam! Repellat, dolores.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 col-lg-pull-4 bg-color-school-run small-space">
+                    <div class="services-box-wrapper">
+                        <span class="services-fa">
                         <i class="fas fa-shuttle-van"></i>
                     </span>
-
-                    <h1 class="services-text-h">School Runs</h1>
-                    <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ab sed nobis sunt fugit ipsam aut aperiam repellat officia fuga, at eligendi quo rerum, quae maiores fugiat minima soluta animi.</p>
-                    <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit perspiciatis tempora similique voluptate veniam aspernatur explicabo earum quibusdam! Repellat, dolores.</p>
+                        <h1 class="services-text-h">School Runs</h1>
+                        <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ab sed nobis sunt fugit ipsam aut aperiam repellat officia fuga, at eligendi quo rerum, quae maiores fugiat minima soluta animi.</p>
+                        <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit perspiciatis tempora similique voluptate veniam aspernatur explicabo earum quibusdam! Repellat, dolores.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4 bg-color-meals small-space">
-                <div class="services-box-wrapper">
-                    <span class="services-fa">
+                <div class="col-xs-12 col-md-6 col-lg-4 bg-color-meals small-space">
+                    <div class="services-box-wrapper">
+                        <span class="services-fa">
                         <i class="fas fa-utensils"></i>
                     </span>
-
-                    <h1 class="services-text-h">Healthy Meals</h1>
-                    <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ab sed nobis sunt fugit ipsam aut aperiam repellat officia fuga, at eligendi quo rerum, quae maiores fugiat minima soluta animi.</p>
-                    <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit perspiciatis tempora similique voluptate veniam aspernatur explicabo earum quibusdam! Repellat, dolores.</p>
+                        <h1 class="services-text-h">Healthy Meals</h1>
+                        <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ab sed nobis sunt fugit ipsam aut aperiam repellat officia fuga, at eligendi quo rerum, quae maiores fugiat minima soluta animi.</p>
+                        <p class="services-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit perspiciatis tempora similique voluptate veniam aspernatur explicabo earum quibusdam! Repellat, dolores.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!--Hacky Version - Probably Get Rid Of-->
-    <!-- Version with .container and hacky workaround
-    <div class="wrapper bg-color-about">
-        <div class="container">
-            <section class="about">
-                <div class="row">
-                    <div class="col-xs-12 col-md-4 small-space box-outline">
-                        dsd
-                    </div>
-                    <div class="col-xs-12 col-md-8 small-space box-outline">
-                        sdsd
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    <div class="wrapper small-space bg-test">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4 bg-color-school-run small-space box-outline">
-
-                </div>
-                <div class="col-xs-12 col-md-4 bg-color-childcare small-space box-outline">
-
-                </div>
-                <div class="col-xs-12 col-md-4 bg-color-meals small-space box-outline">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-    <footer class="container-fluid footer-style">
+    <!--Footer-->
+    <footer class="container-fluid footer-style small-space">
         <div class="row">
             <div class="col-xs-12">
                 <ul class="list-inline social text-center">
@@ -182,7 +162,7 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="name">Name <i class="fas fa-exclamation-circle"></i></label>
-                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
                         </div>
                         <div class="form-group">
                             <label for="address">Address</label>
@@ -190,7 +170,7 @@
                         </div>
                         <div class="form-group">
                             <label for="tel-no">Telephone Number <i class="fas fa-exclamation-circle"></i></label>
-                            <input type="text" class="form-control" id="tel-no" placeholder="Best number to reach you on">
+                            <input type="text" class="form-control" id="tel-no" placeholder="Best number to reach you on" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
@@ -204,21 +184,16 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success" data-dismiss="modal">Send Form</button>
+                        <button type="submit" class="btn btn-success">Send Form</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="popover"]').popover();
-        });
-    </script>
+
 </body>
 
 </html>
