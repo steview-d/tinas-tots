@@ -30,17 +30,18 @@
 /*-----------------------------------------------------------Navigation-*/
 
 .navbar {
-    font-family: 'Autour One', cursive;
-    font-size: 1.15em;
-    font-weight: bold;
-    background-color: #eed9fc;
-    background-color: rgba(153, 0, 255, 0.8);
+    font-family: chauncy-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     border: 0;
 }
 
 .nav-bg-solid {
-    background-color: #eed9fc;
+    background-color: #000;
     width: 100%;
     height: 50px;
     position: absolute;
@@ -53,29 +54,40 @@
     min-height: 50px;
 }
 
-.navbar .navbar-brand {
-    font-size: 1.5em;
-    color: red;
+.navbar .navbar-brand,
+.navbar .navbar-brand:focus {
+    font-family: chauncy-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+    color: #fff5cc;
+    transition: all .2s ease-in-out;
 }
 
 .navbar .navbar-brand:hover {
-    color: red;
+    color: #fff5cc;
+    transform: scale(1.1);
 }
+
+
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     color: white;
     background: transparent;
+    transform: scale(1.1)
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #fff5cc;
+    transition: all .2s ease-in-out;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
+    transform: scale(1.1);
 
 }
 
@@ -94,7 +106,7 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: black;
+    background-color: #fff5cc;
 }
 
 /*----------------------------------------------Home | Background Image-*/
@@ -132,8 +144,15 @@
 
 .jumbotron {
     background-color: transparent;
-    font-family: 'Autour One', cursive;
+    font-family: balloon-urw, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     color: #fff;
+}
+
+.jumbo-h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .intro .hr-divider {
@@ -146,9 +165,9 @@
     white-space: normal;
     font-size: 1.2em;
     padding: 10px 16px;
-    color: #fff;
-    background-color: #56ce6e;
-    border-color: #56ce6e;
+    color: #000;
+    background-color: #fff5cc;
+    border-color: #fff5cc;
     border-radius: 30px;
     border: 0;
 }
@@ -157,9 +176,9 @@
 .intro .btn-success:focus,
 .intro .btn-success:active,
 .intro .btn-success:active:focus {
-    background-color: #48af5c;
-    border-color: #48af5c;
-    transition: 0.3s ease-in-out;
+    background-color: #dbcc93;
+    border-color: #dbcc93;
+    transition: 0.2s ease-in-out;
     outline: 0;
     border: 0;
 }
@@ -172,7 +191,7 @@
 }
 
 .intro a .down-arrows:hover {
-    color: #bbb;
+    color: #fff5cc;
     transform: translate(0, 10px);
 }
 
@@ -184,16 +203,19 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 40px 10px 30px 10px;
+    margin: 30px 10px 30px 10px;
 }
 
 .about-text-wrapper {
-    margin: 0px 20px 30px 30px;
-    font-family: 'Roboto', sans-serif;
+    margin: 30px 20px 30px 20px;
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .about-text-h {
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .about-text-p {
@@ -201,8 +223,10 @@
 }
 
 .services-box-wrapper {
-    font-family: 'Roboto', sans-serif;
-    padding: 30px;
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -214,6 +238,7 @@
 
 .services-text-h {
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .services-text-p {
@@ -230,14 +255,16 @@
 /*---------------------------------------------------------------Footer-*/
 
 .footer-style {
-    background-color: #666;
+    background-color: #000;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .social {
     padding: 10px;
-    margin-bottom: 0;
+    margin: 10px 0 0;
 }
 
 .social li a {
@@ -247,23 +274,26 @@
 .social li a i {
     width: 40px;
     height: 40px;
-    color: red;
+    color: #fff;
     font-size: 24px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    transition: 0.5s ease-in-out;
+    /*transition: 0.5s ease-in-out;*/
+    transition: all .3s ease-in-out;
 }
 
 .social li a i:hover {
-    /*border-radius: 10%;
-    border: 1px solid #d0d0d0;*/
-    color: blue;
+    color: #fff5cc;
+    transform: scale(1.2)
 }
 
 /*----------------------------------------------------------------Modal-*/
 
 .modal {
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     text-align: center;
 }
 
@@ -321,12 +351,18 @@ body {
     }
 }
 
+@media (max-width: 991px) {
+    .tina-pic {
+        margin-bottom: 0;
+    }
+}
 
+
+
+/*---------Color Choices, For Reference----*/
 /*
-
-spacings betweeen pic & about me text
-- create full row div to go between landing and pic/about sections to create
-space there, then pic/about sections have margin-bottom to create space between
-those and services.
+Navbar, purple/blue color #8e8cdd
+Lighter shade was #6a67ff
+Also try, #4340fc
 
 */

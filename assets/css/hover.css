@@ -1,4 +1,4 @@
-/*-------------------------------The following all taken from hover.css-*/
+/*--------------------The below CSS for Pulse Grow taken from hover.css-*/
 /*-----------------------------------Small modifications made by myself-*/
 
 
@@ -20,7 +20,7 @@
 
 .intro .hvr-pulse-grow {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     -webkit-transform: perspective(1px) translateZ(0);
     -moz-transform: perspective(1px) translateZ(0);
     -ms-transform: perspective(1px) translateZ(0);
