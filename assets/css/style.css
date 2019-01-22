@@ -9,7 +9,7 @@
 }
 
 
-/*----------------------------------------------------Background Colors-*/
+/*---------------------------------------------------------------Colors-*/
 
 .bg-color-about {
     background-color: #fff;
@@ -25,6 +25,46 @@
 
 .bg-color-meals {
     background-color: #def7de;
+}
+
+.bg-color-ofsted {
+    background-color: #fff;
+}
+
+.bg-color-testimonials {
+    background-color: #e0e9fc;
+}
+
+.quote-color-one {
+    color: #d2b1f5;
+}
+
+.quote-color-two {
+    color: #f5e4b1;
+}
+
+.quote-color-three {
+    color: #d4f5b1;
+}
+
+.quote-color-four {
+    color: #f5b1d4;
+}
+
+.border-color-one {
+    border: 4px solid #d2b1f5;
+}
+
+.border-color-two {
+    border: 4px solid #f5e4b1;
+}
+
+.border-color-three {
+    border: 4px solid #d4f5b1;
+}
+
+.border-color-four {
+    border: 4px solid #f5b1d4;
 }
 
 /*-----------------------------------------------------------Navigation-*/
@@ -112,7 +152,7 @@
 /*----------------------------------------------Home | Background Image-*/
 
 .bg-fixed {
-    background-image: url("/assets/images/about/bg.jpg");
+    background-image: url("/assets/images/bg.jpg");
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -198,16 +238,16 @@
 /*----------------------------------------------------------------About-*/
 
 .tina-pic {
-    background: url('/assets/images/about/tina_profile.png');
+    background: url('/assets/images/tina_profile.png');
     min-height: 400px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 30px 10px 30px 10px;
+    margin: 50px 10px;
 }
 
 .about-text-wrapper {
-    margin: 30px 20px 30px 20px;
+    margin: 50px 20px;
     font-family: capucine-web, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -250,6 +290,103 @@
     height: 50px;
     margin-top: 50px;
     visibility: hidden;
+}
+
+
+/*---------------------------------------------------------------OFSTED-*/
+
+.ofsted-pic {
+    background: url('/assets/images/ofsted.png');
+    min-height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 40px 10px 30px 10px;
+}
+
+.ofsted-text-wrapper {
+    margin: 40px 20px 30px 20px;
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ofsted-text-h {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.ofsted-text-p {
+    font-size: 1.4em;
+}
+
+/*---------------------------------------------------------Testimonials-*/
+
+.testimonials-wrapper {
+    font-family: capucine-web, sans-serif;
+    margin-top: 30px;
+    /*padding: 0 30px 0 30px;*/
+}
+
+.testimonials-text-h {
+    margin: 30px auto 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.testimonials-text-p {
+    font-size: 1.4em;
+}
+
+blockquote {
+    border: 0;
+}
+
+blockquote p {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+blockquote footer {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.img-quote-border {
+    width: 130px;
+    border-radius: 50%;
+}
+
+#testimonials .media {
+    position: relative;
+    z-index: 1;
+    padding: 20px 15px 0 15px;
+}
+
+#testimonials p .start-quotes {
+    position: absolute;
+    font-family: eloquent-jf-small-caps-pro, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 8em;
+    z-index: -1;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#testimonials p .left-col {
+    top: -0.9em;
+    left: 0.3em;
+}
+
+#testimonials p .right-col {
+    top: -0.9em;
+    left: 1.1em;
 }
 
 /*---------------------------------------------------------------Footer-*/
@@ -324,6 +461,10 @@
     flex-wrap: wrap;
 }
 
+.menu-padding {
+    min-height: 50px;
+}
+
 /* Not supported in Edge or Safari */
 
 html {
@@ -332,6 +473,7 @@ html {
 
 body {
     position: relative;
+    min-width: 240px;
 }
 
 /*--------------------------------------------------------Media Queries-*/
@@ -355,11 +497,16 @@ body {
     .tina-pic {
         margin-bottom: 0;
     }
+    .about-text-wrapper,
+    .ofsted-text-wrapper {
+        margin-top: 0;
+    }
 }
 
 
 
 /*---------Color Choices, For Reference----*/
+
 /*
 Navbar, purple/blue color #8e8cdd
 Lighter shade was #6a67ff
