@@ -51,6 +51,10 @@
     background-color: #f5e4b1;
 }
 
+.bg-color-video {
+    background-color: #b0d0fc;
+}
+
 .quote-color-one {
     color: #d2b1f5;
 }
@@ -434,12 +438,24 @@ blockquote footer {
 .activities-text-p {
     font-weight: 300;
     font-style: normal;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     font-size: 1.4em;
 }
 
+/*----------------------------------------------------------------Video-*/
 
+.video-style {
+    max-width: 600px;
+    width: 100%;
+    margin: 10px auto 20px;
+}
 
+.video-text-p {
+    font-weight: 300;
+    font-style: normal;
+    margin: 0 auto 30px;
+    font-size: 1.4em;
+}
 
 /*---------------------------------------------------------------Footer-*/
 
@@ -553,7 +569,19 @@ body {
     .ofsted-text-wrapper {
         margin-top: 0;
     }
+    .activities-text-p {
+        text-align: center;
+    }
 }
+
+@media (min-width: 1200px) {
+    .video-text-p {
+        width: 80%;
+    }
+}
+
+
+
 
 
 
