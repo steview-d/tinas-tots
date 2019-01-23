@@ -35,6 +35,22 @@
     background-color: #e0e9fc;
 }
 
+.bg-color-indoors {
+    background-color: #d4f5b1;
+}
+
+.bg-color-outdoors {
+    background-color: #f5b1d4;
+}
+
+.bg-color-adventures {
+    background-color: #d2b1f5;
+}
+
+.bg-color-soft-play {
+    background-color: #f5e4b1;
+}
+
 .quote-color-one {
     color: #d2b1f5;
 }
@@ -389,6 +405,42 @@ blockquote footer {
     left: 1.1em;
 }
 
+/*-----------------------------------------------------------Activities-*/
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.activities-wrapper {
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 30px 20px;
+}
+
+.activities-text-h {
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.activities-text-p {
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 30px;
+    font-size: 1.4em;
+}
+
+
+
+
 /*---------------------------------------------------------------Footer-*/
 
 .footer-style {
@@ -453,7 +505,7 @@ blockquote footer {
 
 /*--------------------------------------------------------House Keeping-*/
 
-.row {
+.q--row {
     display: flex;
     display: -webkit-box;
     display: -webkit-flex;
