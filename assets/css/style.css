@@ -55,6 +55,26 @@
     background-color: #b0d0fc;
 }
 
+.bg-color-photos-text {
+    background-color: #fff;
+}
+
+.bg-color-photos-one {
+    background-color: #f5b1d4;
+}
+
+.bg-color-photos-two {
+    background-color: #d4f5b1;
+}
+
+.bg-color-photos-three {
+    background-color: #f5e4b1;
+}
+
+.bg-color-photos-four {
+    background-color: #d2b1f5;
+}
+
 .quote-color-one {
     color: #d2b1f5;
 }
@@ -411,7 +431,7 @@ blockquote footer {
 
 /*-----------------------------------------------------------Activities-*/
 
-.img-responsive {
+#activities img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -425,7 +445,7 @@ blockquote footer {
     font-family: capucine-web, sans-serif;
     font-weight: 300;
     font-style: normal;
-    padding: 30px 20px;
+    padding: 10px 20px;
 }
 
 .activities-text-h {
@@ -455,6 +475,48 @@ blockquote footer {
     font-style: normal;
     margin: 0 auto 30px;
     font-size: 1.4em;
+}
+
+/*---------------------------------------------------------------Photos-*/
+
+.photos-wrapper {
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 10px 20px;
+}
+
+.photos-text-h {
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.photos-text-p {
+    font-weight: 300;
+    font-style: normal;
+    margin: 0 auto 30px;
+    font-size: 1.4em;
+}
+
+.gallery {
+    max-width: 830px;
+    padding: 0;
+}
+
+.q--tn {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 140px;
+}
+
+.thumbnail {
+    margin: 0 15px 20px;
+}
+
+.modal-content: {
+    width: 100%;
 }
 
 /*---------------------------------------------------------------Footer-*/
@@ -493,35 +555,35 @@ blockquote footer {
     transform: scale(1.2)
 }
 
-/*----------------------------------------------------------------Modal-*/
+/*--------------------------------------------------------ContactModal-*/
 
-.modal {
+#contact-modal .modal {
     font-family: capucine-web, sans-serif;
     font-weight: 300;
     font-style: normal;
     text-align: center;
 }
 
-.modal-dialog {
+#contact-modal .modal-dialog {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
 }
 
-.modal i {
+#contact-modal .modal i {
     color: #f49e42;
 }
 
 /* Want to avoid !important override if at all possible?? */
 
-.modal-open {
+#contact-modal .modal-open {
     padding: 0 !important;
     overflow-y: auto;
 }
 
 /*--------------------------------------------------------House Keeping-*/
 
-.q--row {
+.row {
     display: flex;
     display: -webkit-box;
     display: -webkit-flex;
@@ -559,6 +621,13 @@ body {
     .modal-dialog {
         width: 80%;
     }
+    .thumbnail {
+        margin: 0 10px 20px;
+    }
+    /* Allows 2 colums of photos on larger screen mobiles */
+    .gallery .list-inline {
+        margin: 0 -15px 10px -15px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -579,9 +648,6 @@ body {
         width: 80%;
     }
 }
-
-
-
 
 
 

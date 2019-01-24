@@ -25,7 +25,7 @@
         <div class="nav-bg-solid"></div>
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Tina's Tots</a>
+                <a class="navbar-brand" href="index.html">Tina's Tots</a>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -38,7 +38,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="activities.html">Activities</a></li>
-                    <li><a href="#">Media</a></li>
+                    <li><a href="photos.html">Photos</a></li>
                     <li class="active"><a href="reports.html">Reports</a></li>
                     <li><a href="" data-toggle='modal' data-target='#contactModal'>Contact</a></li>
                 </ul>
@@ -160,42 +160,44 @@
     </footer>
 
     <!--Contact Modal-->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactForm" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="contactForm">Request A Call Back</h4>
+    <div id="contact-modal">
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactForm" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="contactForm">Request A Call Back</h4>
+                    </div>
+                    <form action="index.html" method="POST" class="contact">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="name">Name <i class="fas fa-exclamation-circle"></i></label>
+                                <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Can just be area, eg Wednesbury">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel-no">Telephone Number <i class="fas fa-exclamation-circle"></i></label>
+                                <input type="text" class="form-control" id="tel-no" placeholder="Best number to reach you on" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Additional Information</label>
+                                <textarea rows="4" class="form-control" id="message" placeholder="Any relevant information, or questions you may have."></textarea>
+                            </div>
+                            <p><i class="fas fa-exclamation-circle"></i> indicates a required field</p>
+    
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Send Form</button>
+                        </div>
+                    </form>
                 </div>
-                <form action="index.html" method="POST" class="contact">
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="name">Name <i class="fas fa-exclamation-circle"></i></label>
-                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="Can just be area, eg Wednesbury">
-                        </div>
-                        <div class="form-group">
-                            <label for="tel-no">Telephone Number <i class="fas fa-exclamation-circle"></i></label>
-                            <input type="text" class="form-control" id="tel-no" placeholder="Best number to reach you on" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Additional Information</label>
-                            <textarea rows="4" class="form-control" id="message" placeholder="Any relevant information, or questions you may have."></textarea>
-                        </div>
-                        <p><i class="fas fa-exclamation-circle"></i> indicates a required field</p>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-success">Send Form</button>
-                    </div>
-                </form>
             </div>
         </div>
     </div>

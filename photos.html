@@ -37,8 +37,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
-                    <li class="active"><a href="activities.html">Activities</a></li>
-                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li class="active"><a href="photos.html">Photos</a></li>
                     <li><a href="reports.html">Reports</a></li>
                     <li><a href="" data-toggle='modal' data-target='#contactModal'>Contact</a></li>
                 </ul>
@@ -46,120 +46,174 @@
         </div>
     </nav>
 
-    <!--Activities-->
-    <section id="activities">
+    <!--Photos-->
+    <section id="photos">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 col-md-6 bg-color-indoors">
-                    <div class="container-fluid activities-wrapper">
-                        <div class="row">
+                <div class="col-xs-12 col-md-6 bg-color-photos-one">
+                    <div class="container-fluid photos-wrapper">
+                        <div class="row text-center">
                             <div class="col-xs-12">
-                                <h1 class="activities-text-h">Indoors</h1>
+                                <h1 class="photos-text-h">Fun & Games</h1>
                             </div>
-                            <div class="col-xs-12 col-md-4">
-                                <img src="/assets/images/activities/indoors.jpg">
-                            </div>
-                            <div class="col-xs-12 col-md-8">
+                            <div class="col-xs-12">
                                 <div class="activities-text-p">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quas. Non, vero voluptate esse iusto. Quod saepe deleniti architecto autem id, cumque quia soluta dignissimos laborum dolore vitae nemo adipisci illo enim ipsa repellat neque consectetur
-                                    tempore! Nemo assumenda, aperiam.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quas. Non, vero voluptate esse iusto. Quod saepe deleniti architecto autem id, cumque quia soluta dignissimos laborum dolore vitae nemo adipisci illo enim
                                 </div>
-                                <div class="activities-text-p hidden-md">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quas. Non, vero voluptate esse iusto. Quod saepe deleniti architecto autem id, cumque quia soluta dignissimos laborum dolore vitae nemo adipisci illo enim ipsa repellat neque consectetur
-                                    tempore! Nemo assumenda, aperiam.
+                            </div>
+
+                            <!-- Working version - best so far - or was.... not now!
+                            <div class="container-fluid">
+                                <div class="row text-center">
+                                    <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                        <a href="/assets/images/photos/fg1.jpg">
+                                    <img src="/assets/images/photos/fg1_tn.jpg" alt="Fun & Games" class="tn">
+                                </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                        <a href="/assets/images/photos/fg2.jpg">
+                                    <img src="/assets/images/photos/fg2_tn.jpg" alt="Fun & Games" class="tn">
+                                </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                        <a href="/assets/images/photos/fg3.jpg">
+                                    <img src="/assets/images/photos/fg3_tn.jpg" alt="Fun & Games" class="tn">
+                                </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                        <a href="/assets/images/photos/fg4.jpg">
+                                    <img src="/assets/images/photos/fg4_tn.jpg" alt="Fun & Games" class="tn">
+                                </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                        <a href="/assets/images/photos/fg5.jpg">
+                                    <img src="/assets/images/photos/fg5_tn.jpg" alt="Fun & Games" class="tn">
+                                </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                        <a href="/assets/images/photos/fg6.jpg">
+                                    <img src="/assets/images/photos/fg6_tn.jpg" alt="Fun & Games" class="tn">
+                                </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                        <a href="/assets/images/photos/fg7.jpg">
+                                    <img src="/assets/images/photos/fg7_tn.jpg" alt="Fun & Games" class="tn">
+                                </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                        <a href="/assets/images/photos/fg8.jpg">
+                                    <img src="/assets/images/photos/fg8_tn.jpg" alt="Fun & Games" class="tn">
+                                </a>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+
+
+                            <div class="container-fluid gallery">
+                                <div class="col-xs-12 bg-color-photos-one">
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a>
+                                                <img src="/assets/images/photos/fg1_tn.jpg" class="thumbnail" data-toggle="modal" data-target="#fg1" alt="Fun & Games">
+                                            </a>
+                                        </li>
+
+                                        <!--<li><a href="/assets/images/photos/fg1.jpg" class="thumbnail">
+                                        <img src="/assets/images/photos/fg1_tn.jpg" alt="Fun & Games">
+                                        </a>
+                                        </li>-->
+                                        <li><a href="/assets/images/photos/fg2.jpg" class="thumbnail">
+                                        <img src="/assets/images/photos/fg2_tn.jpg" alt="Fun & Games">
+                                        </a></li>
+                                        <li><a href="/assets/images/photos/fg3.jpg" class="thumbnail">
+                                        <img src="/assets/images/photos/fg3_tn.jpg" alt="Fun & Games">
+                                        </a></li>
+                                        <li><a href="/assets/images/photos/fg4.jpg" class="thumbnail">
+                                        <img src="/assets/images/photos/fg4_tn.jpg" alt="Fun & Games">
+                                        </a></li>
+                                        <li><a href="/assets/images/photos/fg5.jpg" class="thumbnail">
+                                        <img src="/assets/images/photos/fg5_tn.jpg" alt="Fun & Games">
+                                        </a></li>
+                                        <li><a href="/assets/images/photos/fg6.jpg" class="thumbnail">
+                                        <img src="/assets/images/photos/fg6_tn.jpg" alt="Fun & Games">
+                                        </a></li>
+                                        <li><a href="/assets/images/photos/fg7.jpg" class="thumbnail">
+                                        <img src="/assets/images/photos/fg7_tn.jpg" alt="Fun & Games">
+                                        </a></li>
+                                        <li><a href="/assets/images/photos/fg8.jpg" class="thumbnail">
+                                        <img src="/assets/images/photos/fg8_tn.jpg" alt="Fun & Games">
+                                        </a></li>
+                                    </ul>
+                                    <!-- Modal Info -->
+                                    <div class="modal fade" id="fg1" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <img class="img-responsive" src="/assets/images/photos/fg1.jpg" alt="Fun & Games">
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 bg-color-outdoors">
-                    <div class="container-fluid activities-wrapper">
+                <div class="col-xs-12 col-md-6 bg-color-photos-two">
+                    <div class="container-fluid photos-wrapper">
                         <div class="row">
                             <div class="col-xs-12">
-                                <h1 class="activities-text-h">Outdoors</h1>
+                                <h1 class="photos-text-h">Gallery Two</h1>
                             </div>
-                            <div class="col-xs-12 col-md-4">
-                                <img src="/assets/images/activities/outdoors.jpg">
-                            </div>
-                            <div class="col-xs-12 col-md-8">
+                            <div class="col-xs-12">
                                 <div class="activities-text-p">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quas. Non, vero voluptate esse iusto. Quod saepe deleniti architecto autem id, cumque quia soluta dignissimos laborum dolore vitae nemo adipisci illo enim ipsa repellat neque consectetur
                                     tempore! Nemo assumenda, aperiam.
                                 </div>
-                                <div class="activities-text-p hidden-md">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quas. Non, vero voluptate esse iusto. Quod saepe deleniti architecto autem id, cumque quia soluta dignissimos laborum dolore vitae nemo adipisci illo enim ipsa repellat neque consectetur
-                                    tempore! Nemo assumenda, aperiam.
-                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                INSERT PHOTOS HERE -ISH
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-6 bg-color-adventures">
-                    <div class="container-fluid activities-wrapper">
+                <div class="col-xs-12 col-md-6 bg-color-photos-three">
+                    <div class="container-fluid photos-wrapper">
                         <div class="row">
                             <div class="col-xs-12">
-                                <h1 class="activities-text-h">Adventures</h1>
+                                <h1 class="photos-text-h">Gallery Three</h1>
                             </div>
-                            <div class="col-xs-12 col-md-4">
-                                <img src="/assets/images/activities/adventures.jpg">
-                            </div>
-                            <div class="col-xs-12 col-md-8">
+                            <div class="col-xs-12">
                                 <div class="activities-text-p">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quas. Non, vero voluptate esse iusto. Quod saepe deleniti architecto autem id, cumque quia soluta dignissimos laborum dolore vitae nemo adipisci illo enim ipsa repellat neque consectetur
                                     tempore! Nemo assumenda, aperiam.
                                 </div>
-                                <div class="activities-text-p hidden-md">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quas. Non, vero voluptate esse iusto. Quod saepe deleniti architecto autem id, cumque quia soluta dignissimos laborum dolore vitae nemo adipisci illo enim ipsa repellat neque consectetur
-                                    tempore! Nemo assumenda, aperiam.
-                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                INSERT PHOTOS HERE -ISH
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 bg-color-soft-play">
-                    <div class="container-fluid activities-wrapper">
+                <div class="col-xs-12 col-md-6 bg-color-photos-four">
+                    <div class="container-fluid photos-wrapper">
                         <div class="row">
                             <div class="col-xs-12">
-                                <h1 class="activities-text-h">Soft Play</h1>
+                                <h1 class="photos-text-h">Gallery Four</h1>
                             </div>
-                            <div class="col-xs-12 col-md-4">
-                                <img src="/assets/images/activities/soft-play.jpg">
-                            </div>
-                            <div class="col-xs-12 col-md-8">
+                            <div class="col-xs-12">
                                 <div class="activities-text-p">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quas. Non, vero voluptate esse iusto. Quod saepe deleniti architecto autem id, cumque quia soluta dignissimos laborum dolore vitae nemo adipisci illo enim ipsa repellat neque consectetur
                                     tempore! Nemo assumenda, aperiam.
                                 </div>
-                                <div class="activities-text-p hidden-md">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quas. Non, vero voluptate esse iusto. Quod saepe deleniti architecto autem id, cumque quia soluta dignissimos laborum dolore vitae nemo adipisci illo enim ipsa repellat neque consectetur
-                                    tempore! Nemo assumenda, aperiam.
-                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                INSERT PHOTOS HERE -ISH
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Video-->
-    <section id="video">
-        <div class="container-fluid bg-color-video">
-            <div class="row activities-wrapper text-center">
-                <div class="col-xs-12">
-                    <h1 class="activities-text-h">
-                        Video
-                    </h1>
-                    <p class="video-text-p">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit alias ratione, inventore debitis sequi minima nemo odit rem assumenda veritatis necessitatibus expedita quaerat iure dolor aliquid reiciendis cupiditate sed animi.
-                    </p>
-                </div>
-                <div class="col-xs-12">
-                    <video controls class="video-style">
-                        <source src="/assets/video/headshoulders.mp4" type="video/mp4">
-                    </video>
                 </div>
             </div>
         </div>
