@@ -120,6 +120,10 @@
     border: 0;
 }
 
+.navbar-nav {
+    padding: 20px 0 20px 0;
+}
+
 .nav-bg-solid {
     background-color: #000;
     width: 100%;
@@ -279,7 +283,7 @@
 
 .tina-pic {
     background: url('/assets/images/tina_profile.png');
-    min-height: 400px;
+    min-height: 250px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -431,6 +435,30 @@ blockquote footer {
 
 /*-----------------------------------------------------------Activities-*/
 
+.bg-pic-indoors {
+    background: url('/assets/images/activities/indoors.jpg');
+}
+
+.bg-pic-outdoors {
+    background: url('/assets/images/activities/outdoors.jpg');
+}
+
+.bg-pic-soft-play {
+    background: url('/assets/images/activities/soft-play.jpg');
+}
+
+.bg-pic-adventures {
+    background: url('/assets/images/activities/adventures.jpg');
+}
+
+.activities-pic-style {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    min-height: 200px;
+}
+
+
 #activities img {
     max-width: 100%;
     height: auto;
@@ -445,7 +473,7 @@ blockquote footer {
     font-family: capucine-web, sans-serif;
     font-weight: 300;
     font-style: normal;
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
 }
 
 .activities-text-h {
@@ -505,18 +533,53 @@ blockquote footer {
     padding: 0;
 }
 
-.q--tn {
-    margin-bottom: 30px;
-    width: 100%;
-    max-width: 140px;
+.gallery .list-inline {
+    margin-left: 0;
 }
 
+#photos img {
+    max-height: 700px;
+}
+
+.thumbnail:active,
+.thumbnail:focus,
 .thumbnail {
     margin: 0 15px 20px;
+    background-color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    opacity: 1;
 }
 
-.modal-content: {
-    width: 100%;
+.tn-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    font-size: 30px;
+    color: #fff5cc;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    pointer-events: none;
+}
+
+.pic-wrapper {
+    position: relative;
+}
+
+.pic-wrapper:hover .thumbnail {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.pic-wrapper:hover .tn-overlay {
+    opacity: 1;
 }
 
 /*---------------------------------------------------------------Footer-*/
@@ -555,31 +618,39 @@ blockquote footer {
     transform: scale(1.2)
 }
 
-/*--------------------------------------------------------ContactModal-*/
+/*----------------------------------------------------------------Modal-*/
 
-#contact-modal .modal {
+.modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+}
+
+.modal {
     font-family: capucine-web, sans-serif;
     font-weight: 300;
     font-style: normal;
     text-align: center;
 }
 
-#contact-modal .modal-dialog {
+.modal-dialog {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
 }
 
-#contact-modal .modal i {
+.modal i {
     color: #f49e42;
 }
 
 /* Want to avoid !important override if at all possible?? */
 
-#contact-modal .modal-open {
+.modal-open {
     padding: 0 !important;
     overflow-y: auto;
 }
+
 
 /*--------------------------------------------------------House Keeping-*/
 
@@ -608,8 +679,8 @@ body {
 
 /*--------------------------------------------------------Media Queries-*/
 
-@media screen and (min-width: 768px) {
-    .modal:before {
+@media (min-width: 768px) {
+    .q--modal:before {
         display: inline-block;
         vertical-align: middle;
         content: " ";
@@ -617,7 +688,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .modal-dialog {
         width: 80%;
     }
@@ -627,6 +698,14 @@ body {
     /* Allows 2 colums of photos on larger screen mobiles */
     .gallery .list-inline {
         margin: 0 -15px 10px -15px;
+    }
+    /* Forces contact modal to top at this width, but all other modals
+    remain centered */
+    #contact-modal .modal:before {
+        display: inline-block;
+        vertical-align: top;
+        content: " ";
+        height: 100%;
     }
 }
 
@@ -643,13 +722,38 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
-    .video-text-p {
-        width: 80%;
+@media (min-width: 768px) {
+    #photos .modal-dialog {
+        width: auto;
+        max-width: 700px;
+    }
+    .navbar-nav {
+        padding: 0;
     }
 }
 
+@media (min-width: 992px) {
+    #photos .modal-dialog {
+        width: auto;
+        max-width: 9000px
+    }
+    .tina-pic {
+        min-height: 300px;
+    }
+}
 
+@media (min-width: 1200px) {
+    #photos .modal-dialog {
+        width: auto;
+        max-width: 1000px
+    }
+    .video-text-p {
+        width: 50%;
+    }
+    .tina-pic {
+        min-height: 400px;
+    }
+}
 
 /*---------Color Choices, For Reference----*/
 
