@@ -11,6 +11,18 @@
 
 /*---------------------------------------------------------------Colors-*/
 
+.bg-color-black {
+    background-color: #000;
+}
+
+.bg-color-white {
+    background-color: #fff;
+}
+
+.bg-color-cream {
+    background-color: #fff5cc;
+}
+
 .bg-color-about {
     background-color: #fff;
 }
@@ -368,7 +380,7 @@
 
 .testimonials-wrapper {
     font-family: capucine-web, sans-serif;
-    margin-top: 30px;
+    padding-top: 30px;
     /*padding: 0 30px 0 30px;*/
 }
 
@@ -569,6 +581,26 @@ blockquote footer {
     pointer-events: none;
 }
 
+.carousel-text {
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    color: #fff5cc;
+    opacity: 1;
+    transition: .5s;
+}
+
+.carousel-control.left:hover,
+.carousel-control.right:hover {
+    color: #dbcc93;
+}
+
+
+
 .pic-wrapper {
     position: relative;
 }
@@ -672,6 +704,96 @@ blockquote footer {
     min-height: calc(100vh - 150px);
 }
 
+/*--------------------------------------------------------------Contact-*/
+
+#contact {
+    min-height: calc(100vh - 150px);
+}
+
+.contact-form {
+    width: 100%;
+    text-align: left;
+}
+
+.contact-form .form-control {
+    background-color: #fffae6;
+    border-color: #999;
+}
+
+.contact-text-wrapper {
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 20px;
+}
+
+.contact-text-h {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-text-p {
+    font-size: 1.4em;
+}
+
+#contact hr {
+    margin: 40px auto;
+    border-color: #ffe8cc;
+}
+
+form i {
+    color: #f49e42;
+}
+
+q--form-footer {
+    text-align: left;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: -20px auto 40px auto;
+}
+
+.btn-outline-send {
+    color: #01d432;
+    background-color: #fff5cc;
+    border-color: #01d432;
+    font-weight: bold;
+    transition: .3s;
+    letter-spacing: 0.1em;
+
+}
+
+.btn-outline-send:hover,
+.btn-outline-send:active,
+.btn-outline-send:focus,
+.btn-outline-send:active:focus {
+    background: #01d432;
+    color: #fff5cc;
+    border-color: #01d432;
+    outline: 0;
+}
+
+.btn-outline-reset {
+    color: #f0ad4e;
+    background-color: #fff5cc;
+    border-color: #f0ad4e;
+    font-weight: bold;
+    transition: .3s;
+    letter-spacing: 0.1em;
+}
+
+.btn-outline-reset:hover,
+.btn-outline-reset:active,
+.btn-outline-reser:focus,
+.btn-outline-reset:active:focus {
+    background: #f0ad4e;
+    color: #fff5cc;
+    border-color: #f0ad4e;
+    outline: 0;
+}
+
 
 
 /*---------------------------------------------------------------Footer-*/
@@ -708,39 +830,6 @@ blockquote footer {
 .social li a i:hover {
     color: #fff5cc;
     transform: scale(1.2)
-}
-
-/*----------------------------------------------------------------Modal-*/
-
-.modal:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: " ";
-    height: 100%;
-}
-
-.modal {
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-}
-
-.modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.modal i {
-    color: #f49e42;
-}
-
-/* Want to avoid !important override if at all possible?? */
-
-.modal-open {
-    padding: 0 !important;
-    overflow-y: auto;
 }
 
 
@@ -847,11 +936,38 @@ body {
     }
 }
 
-/*---------Color Choices, For Reference----*/
 
-/*
-Navbar, purple/blue color #8e8cdd
-Lighter shade was #6a67ff
-Also try, #4340fc
+/*----------------------------- OLD & LIKELY NO LONGER USED - TBC ------*/
 
-*/
+/*----------------------------------------------------------------Modal-*/
+
+.modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+}
+
+.modal {
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal i {
+    color: #f49e42;
+}
+
+/* Want to avoid !important override if at all possible?? */
+
+.modal-open {
+    padding: 0 !important;
+    overflow-y: auto;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tina's Tots | Childminding Services</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--Adobe Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/wzl8tru.css">
+    <!--My CSS-->
+    <link rel="stylesheet" href="assets/css/hover.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-color-black">
+
+    <!--50px padding due to fixed menu position-->
+    <div class="menu-padding"></div>
+
+    <!--Navigation-->
+    <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top">
+        <div class="nav-bg-solid"></div>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Tina's Tots</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="nav-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Contact-->
+    <section id="contact" class="bg-color-cream">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 contact-text-wrapper text-center">
+                    <h1 class="contact-text-h">Contact Me</h1>
+                    <p class="contact-text-p">
+                        Getting in touch is easy! You can either call me on <strong>07826 848230</strong> or complete the form below and I'll be in touch - whichever is easiest for you!
+                    </p>
+                    <hr>
+
+                    <form action="contact.html" method="POST" class="contact-form">
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label for="name">Name <i class="fas fa-exclamation-circle"></i></label>
+                                <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Can just be area, eg Wednesbury">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel-no">Telephone Number <i class="fas fa-exclamation-circle"></i></label>
+                                <input type="text" class="form-control" id="tel-no" placeholder="Best number to reach you on" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Additional Information</label>
+                                <textarea rows="4" class="form-control" id="message" placeholder="Any relevant information, or questions you may have."></textarea>
+                            </div>
+                            <p><i class="fas fa-exclamation-circle"></i> indicates a required field</p>
+                            <hr>
+                        </div>
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn-outline-send">Send Form</button>
+                            <button type="reset" class="btn btn-outline-reset">Reset Form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Footer-->
+    <footer class="container-fluid footer-style">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="list-inline social text-center">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.pinterest.co.uk/" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 copyright">
+                <P class="text-center">©2019 Tina's Tots</P>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
