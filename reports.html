@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="bg-color-dark-blue">
 
     <!--50px padding due to fixed menu position-->
     <div class="menu-padding"></div>
@@ -47,19 +47,29 @@
     </nav>
 
     <!--OFSTED-->
-    <section id="about">
-        <div class="container-fluid">
-            <div class="row bg-color-cream">
-                <div class="col-xs-12 col-md-4 col-md-push-8 col-lg-offset-1 col-lg-3 col-lg-push-7">
+    <section id="ofsted" class="ofsted-wrapper">
+        <div class="container bg-color-dark-blue">
+            <div class="row flex-row">
+                <div class="col-xs-12 col-md-6">
                     <div class="ofsted-pic"></div>
                 </div>
-                <div class="col-xs-12 col-md-8 col-md-pull-4 col-lg-7 col-lg-pull-3">
-                    <div class="ofsted-text-wrapper">
-                        <h1 class="ofsted-text-h">OFSTED Reports</h1>
-                        <p class="ofsted-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam veniam doloremque ipsa quia quas consequuntur at, dicta dolore nam necessitatibus! Consequatur modi temporibus placeat sunt quasi, nihil sed eveniet est.</p>
-                        <p class="ofsted-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis a eligendi esse deleniti sint expedita animi perferendis sequi tenetur debitis ex eveniet inventore, accusamus ullam asperiores et rem rerum porro voluptate
-                            ad quo saepe aliquam voluptatem, sunt voluptatum? Perferendis, minima!</p>
-                        <p class="ofsted-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veritatis incidunt sed qui eos illum aliquid quisquam quidem in exercitationem.</p>
+                <div class="col-xs-12 col-md-6">
+                    <div class="ofsted-text-wrapper text-center">
+                        <p class="ofsted-text-p">
+                            I have been inspected by OFSTED twice in the past 5 years. They were routine vists with no notice and on both occasions I scored 'Good'.
+                        </p>
+                        <p class="ofsted-text-p">
+                            If you follow the links below, they will take you to my OFSTED reports where you can read these for yourself.
+                        </p>
+                        <p>
+                            <hr>
+                        </p>
+                        <div class="ofsted-links">
+                            <p><a href="https://reports.ofsted.gov.uk/provider/17/EY444163" target="_blank"><button class="btn btn-outline-ofsted">My OFSTED page</button></a></p>
+                            <p><a href="https://files.api.ofsted.gov.uk/v1/file/2412272" target="_blank"><button class="btn btn-outline-ofsted">Report: July 2014</button></a></p>
+                            <p><a href="https://files.api.ofsted.gov.uk/v1/file/2782729" target="_blank"><button class="btn btn-outline-ofsted">Report: June 2018</button></a></p>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,77 +77,71 @@
     </section>
 
     <!--Testimonials-->
-    <section id="testimonials">
-        <div class="container-fluid bg-color-testimonials testimonials-wrapper">
+    <section id="testimonials" class="testimonials-wrapper">
+        <div class="container">
+            <div class="ofsted-text-wrapper">
+                <h1 class="ofsted-text-h">Meet The Parents</h1>
+            </div>
             <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="testimonials-text-h text-center">Testimonials</h1><br />
-                </div>
-                <!--Testimonial Quotes x4-->
-                <div class="col-xs-12 col-md-6">
-                    <!--col-lg-5 col-lg-offset-1-->
-                    <div class="media">
-                        <div class="media-body">
-                            <blockquote class="text-right">
-                                <p><span class="start-quotes left-col quote-color-one">"</span>
-                                3 years on, and my child is still alive - Tina has done a fantastic job, much better than my kids Dad, had he stuck around.</p>
-                                <footer>Jane Smith, <cite title="Source Title">Mother to Molly (aged 3)</cite></footer>
-                            </blockquote>
-                        </div>
-                        <div class="media-right">
-                            <img src="/assets/images/quotes/q1.jpg" class="media-object img-quote-border border-color-one">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="row">
+                        <div class="col-xs-12 testimonials-pic-one testimonials-pic-style"></div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <blockquote class="text-paragraph testimonials-text-box">
+                                    <p>3 years on, and my child is still alive - Tina has done a fantastic job, much better than my kids Dad, had he stuck around.</p>
+                                    <footer>Kelly Roberts, <br class="hidden-xs" /><cite title="Source Title">Mother to Charlie (aged 6)</cite></footer>
+                                    <div class="col-xs-12 hidden-xs quotes "></div>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
-                    <!--col-lg-5-->
-                    <div class="media">
-                        <div class="media-left">
-                            <img src="/assets/images/quotes/q2.jpg" class="media-object img-quote-border border-color-two">
+                <div class="hidden-xs col-sm-6 col-md-4 col-lg-3">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <blockquote class="text-paragraph testimonials-text-box">
+                                    <p>3 years on, and my child is still alive - Tina has done a fantastic job, much better than my kids Dad, had he stuck around.</p>
+                                    <footer>June Bates, <br class="hidden-xs" /><cite title="Source Title">Grandmother to Heather (aged 3)</cite></footer>
+                                    <div class="col-xs-12 hidden-xs quotes "></div>
+                                </blockquote>
+                            </div>
                         </div>
-                        <div class="media-body">
-                            <blockquote class="text-left">
-                                <p><span class="start-quotes right-col quote-color-two">"</span>
-                                Tina has been great for Harvey. Before Tina started looking after him he could barely speak, now we can't shut him up - not even with tape. fdsfsdf sdfsdfsdf dsf ds fds f df sd fsdfsdfs s fsd sdfsd</p>
-                                <footer>Kevin Anderson, <cite title="Source Title">Father to Harvey (aged 8)</cite></footer>
-                            </blockquote>
+                        <div class="col-xs-12 testimonials-pic-two testimonials-pic-style"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm col-md-4 col-lg-3">
+                    <div class="row">
+                        <div class="col-xs-12 testimonials-pic-three testimonials-pic-style"></div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <blockquote class="text-paragraph testimonials-text-box">
+                                    <p>3 years on, and my child is still alive - Tina has done a fantastic job, much better than my kids Dad, had he stuck around.</p>
+                                    <footer>Claire Campbell, <br class="hidden-xs" /><cite title="Source Title">Mother to Jacob (aged 12 months)</cite></footer>
+                                    <div class="col-xs-12 hidden-xs quotes "></div>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
-                    <!-- col-lg-5 col-lg-offset-1 -->
-                    <div class="media">
-                        <div class="media-body">
-                            <blockquote class="text-right">
-                                <p><span class="start-quotes left-col quote-color-three">"</span>
-                                Tina has been great for Harvey. Before Tina started looking after him he could barely speak, now we can't shut him up - not even with tape.cffffffffffffff fffffff fffffffff ffffffffffffffffffff fff f ffffffff ff</p>
-                                <footer>Kevin Anderson, <cite title="Source Title">Father to Harvey (aged 8)</cite></footer>
-                            </blockquote>
+                <div class="col-lg-3 visible-lg-block">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <blockquote class="text-paragraph testimonials-text-box">
+                                    <p>3 years on, and my child is still alive - Tina has done a fantastic job, much better than my kids Dad, had he stuck around.</p>
+                                    <footer>Brian Fellows, <br class="hidden-xs" /><cite title="Source Title">Father to Jennifer (aged 2)</cite></footer>
+                                    <div class="col-xs-12 hidden-xs quotes "></div>
+                                </blockquote>
+                            </div>
                         </div>
-                        <div class="media-right">
-                            <img src="/assets/images/quotes/q3.jpg" class="media-object img-quote-border border-color-three">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <!--col-lg-5-->
-                    <div class="media">
-                        <div class="media-left">
-                            <img src="/assets/images/quotes/q4.jpg" class="media-object img-quote-border border-color-four">
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="text-left">
-                                <p><span class="start-quotes right-col quote-color-four">"</span>
-                                3 years on, and my child is still alive - Tina has done a fantastic job, much better than my kids Dad, had he stuck around.</p>
-                                <footer>Jane Smith, <cite title="Source Title">Mother to Molly (aged 3)</cite></footer>
-                            </blockquote>
-                        </div>
+                        <div class="col-xs-12 testimonials-pic-four testimonials-pic-style"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!--Footer-->
     <footer class="container-fluid footer-style">

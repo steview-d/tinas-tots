@@ -1,14 +1,3 @@
-/*------------------------------------------------------------Misc Crap-*/
-
-.tiny-space {
-    min-height: 50px;
-}
-
-.small-space {
-    min-height: 300px;
-}
-
-
 /*---------------------------------------------------------------Colors-*/
 
 .bg-color-black {
@@ -21,6 +10,10 @@
 
 .bg-color-cream {
     background-color: #fff5cc;
+}
+
+.bg-color-dark-blue {
+    background-color: #292659;
 }
 
 .bg-color-about {
@@ -205,6 +198,21 @@
     background-color: #fff5cc;
 }
 
+/*------------------------------------------------------General Styling-*/
+
+.text-header {
+    font-family: capucine-web, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.text-paragraph {
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
 /*----------------------------------------------Home | Background Image-*/
 
 .bg-fixed {
@@ -351,98 +359,116 @@
 
 /*---------------------------------------------------------------OFSTED-*/
 
+.ofsted-wrapper {
+    margin: 50px auto;
+}
+
 .ofsted-pic {
-    background: url('/assets/images/ofsted.png');
+    background: url('/assets/images/ofsted_grade.png');
     min-height: 300px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 40px 10px 30px 10px;
+    margin: 0 auto 50px auto;
+
 }
 
 .ofsted-text-wrapper {
-    margin: 40px 20px 30px 20px;
+    margin: 30px auto;
     font-family: capucine-web, sans-serif;
     font-weight: 300;
     font-style: normal;
+    color: #fff;
 }
 
 .ofsted-text-h {
     margin-bottom: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .ofsted-text-p {
     font-size: 1.4em;
 }
 
+.ofsted-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn-outline-ofsted,
+.btn-outline-ofsted:focus {
+    color: #fff;
+    background-color: #292659;
+    border-color: #fff;
+    font-weight: bold;
+    transition: .3s;
+    letter-spacing: 0.1em;
+    outline: none;
+}
+
+.btn-outline-ofsted:hover,
+.btn-outline-ofsted:active,
+.btn-outline-ofsted:active:focus {
+    background: #fff;
+    color: #292659;
+    outline: none;
+}
+
 /*---------------------------------------------------------Testimonials-*/
 
 .testimonials-wrapper {
-    font-family: capucine-web, sans-serif;
-    padding-top: 30px;
-    /*padding: 0 30px 0 30px;*/
+    margin-bottom: 50px;
 }
 
-.testimonials-text-h {
-    margin: 30px auto 20px;
-    font-weight: bold;
-    font-style: normal;
+.testimonials-pic-one {
+    background: url('/assets/images/quotes/q1.jpg')
 }
 
-.testimonials-text-p {
-    font-size: 1.4em;
+.testimonials-pic-two {
+    background: url('/assets/images/quotes/q2.jpg')
 }
 
-blockquote {
-    border: 0;
+.testimonials-pic-three {
+    background: url('/assets/images/quotes/q3.jpg')
 }
 
-blockquote p {
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.2em;
+.testimonials-pic-four {
+    background: url('/assets/images/quotes/q4.jpg')
 }
 
-blockquote footer {
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1.2em;
+.testimonials-pic-style {
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    height: 200px;
+    border-top: 4px solid #292659;
+    border-bottom: 4px solid #292659;
+    border-left: 10px solid #292659;
+    border-right: 10px solid #292659;
 }
 
-.img-quote-border {
-    width: 130px;
-    border-radius: 50%;
+
+.testimonials-text-box {
+    color: #292659;
+    background-color: #fff;
+    min-height: 250px;
+    margin: 0;
+    border-top: 4px solid #292659;
+    border-bottom: 4px solid #292659;
+    border-left: 10px solid #292659;
+    border-right: 10px solid #292659;
 }
 
-#testimonials .media {
-    position: relative;
-    z-index: 1;
-    padding: 20px 15px 0 15px;
-}
-
-#testimonials p .start-quotes {
-    position: absolute;
-    font-family: eloquent-jf-small-caps-pro, serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 8em;
-    z-index: -1;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-#testimonials p .left-col {
-    top: -0.9em;
-    left: 0.3em;
-}
-
-#testimonials p .right-col {
-    top: -0.9em;
-    left: 1.1em;
+.quotes {
+    opacity: 0.8;
+    margin-top: 20px;
+    background: url('/assets/images/quotes/quotes.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 50px;
 }
 
 /*-----------------------------------------------------------Activities-*/
@@ -471,7 +497,7 @@ blockquote footer {
 }
 
 
-#activities img {
+#a1ctivities img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -745,53 +771,48 @@ form i {
     color: #f49e42;
 }
 
-q--form-footer {
-    text-align: left;
-}
-
 .form-footer {
     display: flex;
     justify-content: space-between;
     margin: -20px auto 40px auto;
 }
 
-.btn-outline-send {
+.btn-outline-send,
+.btn-outline-send:focus {
     color: #01d432;
     background-color: #fff5cc;
     border-color: #01d432;
     font-weight: bold;
     transition: .3s;
     letter-spacing: 0.1em;
-
+    outline: none;
 }
 
 .btn-outline-send:hover,
 .btn-outline-send:active,
-.btn-outline-send:focus,
 .btn-outline-send:active:focus {
     background: #01d432;
     color: #fff5cc;
-    border-color: #01d432;
-    outline: 0;
+    outline: none;
 }
 
-.btn-outline-reset {
+.btn-outline-reset,
+.btn-outline-reset:focus {
     color: #f0ad4e;
     background-color: #fff5cc;
     border-color: #f0ad4e;
     font-weight: bold;
     transition: .3s;
     letter-spacing: 0.1em;
+    outline: none;
 }
 
 .btn-outline-reset:hover,
 .btn-outline-reset:active,
-.btn-outline-reser:focus,
 .btn-outline-reset:active:focus {
     background: #f0ad4e;
     color: #fff5cc;
-    border-color: #f0ad4e;
-    outline: 0;
+    outline: none;
 }
 
 
@@ -843,6 +864,11 @@ q--form-footer {
     flex-wrap: wrap;
 }
 
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
 .menu-padding {
     min-height: 50px;
 }
@@ -887,6 +913,19 @@ body {
         vertical-align: top;
         content: " ";
         height: 100%;
+    }
+    .ofsted-pic {
+        min-height: 200px;
+    }
+    .testimonials-wrapper {
+        margin-bottom: 0;
+    }
+    .testimonials-text-box {
+        min-height: 100px;
+        border: none;
+    }
+    .testimonials-pic-style {
+        border: none;
     }
 }
 
@@ -971,3 +1010,14 @@ body {
     padding: 0 !important;
     overflow-y: auto;
 }
+
+/*------------------------------------------------------------Misc Crap-*/
+
+.tiny-space {
+    min-height: 50px;
+}
+
+.small-space {
+    min-height: 300px;
+}
+
