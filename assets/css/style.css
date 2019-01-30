@@ -12,104 +12,28 @@
     background-color: #fff5cc;
 }
 
-.bg-color-dark-blue {
-    background-color: #292659;
-}
-
-.bg-color-about {
-    background-color: #fff;
-}
-
-.bg-color-school-run {
-    background-color: #dbfeff;
-}
-
-.bg-color-childcare {
-    background-color: #ffffcc;
-}
-
-.bg-color-meals {
-    background-color: #def7de;
-}
-
-.bg-color-ofsted {
-    background-color: #fff;
-}
-
-.bg-color-testimonials {
-    background-color: #e0e9fc;
-}
-
-.bg-color-indoors {
-    background-color: #d4f5b1;
-}
-
-.bg-color-outdoors {
-    background-color: #f5b1d4;
-}
-
-.bg-color-adventures {
-    background-color: #d2b1f5;
-}
-
-.bg-color-soft-play {
+.bg-color-dark-cream {
     background-color: #f5e4b1;
 }
 
-.bg-color-video {
+.bg-color-light-green {
+    background-color: #d4f5b1;
+}
+
+.bg-color-light-pink {
+    background-color: #f5b1d4;
+}
+
+.bg-color-light-purple {
+    background-color: #d2b1f5;
+}
+
+.bg-color-light-blue {
     background-color: #b0d0fc;
 }
 
-.bg-color-photos-text {
-    background-color: #fff;
-}
-
-.bg-color-photos-one {
-    background-color: #f5b1d4;
-}
-
-.bg-color-photos-two {
-    background-color: #d4f5b1;
-}
-
-.bg-color-photos-three {
-    background-color: #f5e4b1;
-}
-
-.bg-color-photos-four {
-    background-color: #d2b1f5;
-}
-
-.quote-color-one {
-    color: #d2b1f5;
-}
-
-.quote-color-two {
-    color: #f5e4b1;
-}
-
-.quote-color-three {
-    color: #d4f5b1;
-}
-
-.quote-color-four {
-    color: #f5b1d4;
-}
-
-.border-color-one {
-    border: 4px solid #d2b1f5;
-}
-
-.border-color-two {
-    border: 4px solid #f5e4b1;
-}
-
-.border-color-three {
-    border: 4px solid #d4f5b1;
-}
-
-.border-color-four {
-    border: 4px solid #f5b1d4;
+.bg-color-dark-blue {
+    background-color: #292659;
 }
 
 /*-----------------------------------------------------------Navigation-*/
@@ -118,7 +42,7 @@
     font-family: chauncy-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 2em;
+    font-size: 1.9em;
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
@@ -126,7 +50,8 @@
 }
 
 .navbar-nav {
-    padding: 20px 0 20px 0;
+    padding: 20px 15px 20px 15px;
+    margin: 0;
 }
 
 .nav-bg-solid {
@@ -139,8 +64,9 @@
     z-index: -1;
 }
 
+/* PENDING DELETION */
 .nav-spacer {
-    min-height: 50px;
+    min-height: 500px;
 }
 
 .navbar .navbar-brand,
@@ -157,8 +83,6 @@
     color: #fff5cc;
     transform: scale(1.1);
 }
-
-
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
@@ -340,6 +264,19 @@
     padding: 0 10px;
 }
 
+.services-fa-purple {
+    color: #9e03ff;
+}
+
+.services-fa-green {
+    color: #65e001;
+}
+
+.services-fa-pink {
+    color: #ff0062;
+}
+
+
 .services-text-h {
     margin-bottom: 20px;
     font-weight: bold;
@@ -358,6 +295,10 @@
 
 
 /*---------------------------------------------------------------OFSTED-*/
+
+.reports-min-height-wrapper {
+    min-height: calc(100vh - 250px);
+}
 
 .ofsted-wrapper {
     margin: 50px auto;
@@ -382,7 +323,7 @@
 }
 
 .ofsted-text-h {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-weight: bold;
     text-align: center;
 }
@@ -451,8 +392,8 @@
 
 
 .testimonials-text-box {
-    color: #292659;
-    background-color: #fff;
+    color: #fff;
+    background-color: #292659;
     min-height: 250px;
     margin: 0;
     border-top: 4px solid #292659;
@@ -881,7 +822,6 @@ html {
 
 body {
     position: relative;
-    /*min-width: 240px; LEAVE OUT - NOT REQUIRED AS NO VIEWPORT GOES BELOW 300*/
 }
 
 /*--------------------------------------------------------Media Queries-*/
@@ -892,6 +832,10 @@ body {
         vertical-align: middle;
         content: " ";
         height: 100%;
+    }
+    .testimonials-text-box {
+        color: #292659;
+        background-color: #fff;
     }
 }
 
@@ -926,6 +870,10 @@ body {
     }
     .testimonials-pic-style {
         border: none;
+    }
+    /* Removes 50px space under testimonials*/
+    .reports-min-height-wrapper {
+        min-height: calc(100vh - 200px);
     }
 }
 
@@ -971,44 +919,8 @@ body {
         width: 50%;
     }
     .tina-pic {
-        min-height: 400px;
+        min-height: 350px;
     }
-}
-
-
-/*----------------------------- OLD & LIKELY NO LONGER USED - TBC ------*/
-
-/*----------------------------------------------------------------Modal-*/
-
-.modal:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: " ";
-    height: 100%;
-}
-
-.modal {
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-}
-
-.modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.modal i {
-    color: #f49e42;
-}
-
-/* Want to avoid !important override if at all possible?? */
-
-.modal-open {
-    padding: 0 !important;
-    overflow-y: auto;
 }
 
 /*------------------------------------------------------------Misc Crap-*/
@@ -1020,4 +932,3 @@ body {
 .small-space {
     min-height: 300px;
 }
-
