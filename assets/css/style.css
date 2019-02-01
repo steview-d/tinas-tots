@@ -1,3 +1,31 @@
+/*------------------------------------------------------General Styling-*/
+
+html {
+    /* Not supported in Edge or Safari */
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.text-paragraph {
+    font-family: capucine-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.4em;
+}
+
+.text-header {
+    font-family: capucine-web, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.menu-padding {
+    min-height: 50px;
+}
+
 /*---------------------------------------------------------------Colors-*/
 
 .bg-color-black {
@@ -36,6 +64,10 @@
     background-color: #292659;
 }
 
+.bg-color-purple {
+    background-color: #432659;
+}
+
 /*-----------------------------------------------------------Navigation-*/
 
 .navbar {
@@ -59,21 +91,13 @@
     width: 100%;
     height: 50px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: -1;
-}
-
-/* PENDING DELETION */
-.nav-spacer {
-    min-height: 500px;
 }
 
 .navbar .navbar-brand,
 .navbar .navbar-brand:focus {
-    font-family: chauncy-pro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 1em;
     color: #fff5cc;
     transition: all .2s ease-in-out;
@@ -101,40 +125,21 @@
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
     transform: scale(1.1);
-
 }
 
 .navbar-default .navbar-collapse {
     border-color: transparent;
 }
 
-.navbar-default .navbar-toggle {
-    border: 0;
-    background-color: transparent;
-}
-
+.navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
+    border: 0;
     background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff5cc;
-}
-
-/*------------------------------------------------------General Styling-*/
-
-.text-header {
-    font-family: capucine-web, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-}
-
-.text-paragraph {
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-
 }
 
 /*----------------------------------------------Home | Background Image-*/
@@ -145,22 +150,9 @@
     background-size: cover;
     background-position: center;
     position: fixed;
-    /* Removed top / left 0  & height 100% */
     width: 100%;
     z-index: -2;
 }
-
-.dimmer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 120vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
-
-
 /*--------------------------------------------------------------Landing-*/
 
 .landing {
@@ -188,27 +180,25 @@
     margin: 30px auto;
 }
 
-.intro .btn-success {
-    margin: 10px;
-    white-space: normal;
-    font-size: 1.2em;
-    padding: 10px 16px;
+.btn-outline-get-in-touch,
+.btn-outline-get-in-touch:focus {
     color: #000;
     background-color: #fff5cc;
     border-color: #fff5cc;
-    border-radius: 30px;
-    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
+    letter-spacing: 0.1em;
+    outline: none;
+    border-width: 3px;
 }
 
-.intro .btn-success:hover,
-.intro .btn-success:focus,
-.intro .btn-success:active,
-.intro .btn-success:active:focus {
-    background-color: #dbcc93;
-    border-color: #dbcc93;
-    transition: 0.2s ease-in-out;
-    outline: 0;
-    border: 0;
+.btn-outline-get-in-touch:hover,
+.btn-outline-get-in-touch:active,
+.btn-outline-get-in-touch:active:focus {
+    background: transparent;
+    color: #fff5cc;
+    outline: none;
 }
 
 .intro a .down-arrows {
@@ -225,37 +215,36 @@
 
 /*----------------------------------------------------------------About-*/
 
+.about-link {
+    display: block;
+    height: 50px;
+    margin-top: -50px;
+    visibility: hidden;
+}
+
 .tina-pic {
     background: url('/assets/images/tina_profile.png');
     min-height: 250px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 50px 10px;
+    margin: 50px 10px 10px 10px;
 }
 
 .about-text-wrapper {
-    margin: 50px 20px;
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
+    margin: 0 20px 50px 20px;
+    color: #fff;
 }
 
-.about-text-h {
+.text-header--about {
     margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.about-text-p {
-    font-size: 1.4em;
 }
 
 .services-box-wrapper {
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    padding: 30px 20px;
+    padding: 25px 15px;
     text-align: center;
+    border-top: 10px solid #432659;
+    border-bottom: 10px solid #432659;
 }
 
 .services-fa {
@@ -269,7 +258,7 @@
 }
 
 .services-fa-green {
-    color: #65e001;
+    color: #70c729;
 }
 
 .services-fa-pink {
@@ -277,139 +266,13 @@
 }
 
 
-.services-text-h {
+.text-header--services {
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.services-text-p {
-    font-size: 1.2em;
-}
-
-.about-link {
-    display: block;
-    height: 50px;
-    margin-top: 50px;
-    visibility: hidden;
-}
-
-
-/*---------------------------------------------------------------OFSTED-*/
-
-.reports-min-height-wrapper {
-    min-height: calc(100vh - 250px);
-}
-
-.ofsted-wrapper {
-    margin: 50px auto;
-}
-
-.ofsted-pic {
-    background: url('/assets/images/ofsted_grade.png');
-    min-height: 300px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0 auto 50px auto;
-
-}
-
-.ofsted-text-wrapper {
-    margin: 30px auto;
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #fff;
-}
-
-.ofsted-text-h {
-    margin-bottom: 50px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.ofsted-text-p {
-    font-size: 1.4em;
-}
-
-.ofsted-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.btn-outline-ofsted,
-.btn-outline-ofsted:focus {
-    color: #fff;
-    background-color: #292659;
-    border-color: #fff;
-    font-weight: bold;
-    transition: .3s;
-    letter-spacing: 0.1em;
-    outline: none;
-}
-
-.btn-outline-ofsted:hover,
-.btn-outline-ofsted:active,
-.btn-outline-ofsted:active:focus {
-    background: #fff;
-    color: #292659;
-    outline: none;
-}
-
-/*---------------------------------------------------------Testimonials-*/
-
-.testimonials-wrapper {
-    margin-bottom: 50px;
-}
-
-.testimonials-pic-one {
-    background: url('/assets/images/quotes/q1.jpg')
-}
-
-.testimonials-pic-two {
-    background: url('/assets/images/quotes/q2.jpg')
-}
-
-.testimonials-pic-three {
-    background: url('/assets/images/quotes/q3.jpg')
-}
-
-.testimonials-pic-four {
-    background: url('/assets/images/quotes/q4.jpg')
-}
-
-.testimonials-pic-style {
-    background-repeat: no-repeat;
-    background-size: 120%;
-    background-position: center;
-    height: 200px;
-    border-top: 4px solid #292659;
-    border-bottom: 4px solid #292659;
-    border-left: 10px solid #292659;
-    border-right: 10px solid #292659;
-}
-
-
-.testimonials-text-box {
-    color: #fff;
-    background-color: #292659;
-    min-height: 250px;
-    margin: 0;
-    border-top: 4px solid #292659;
-    border-bottom: 4px solid #292659;
-    border-left: 10px solid #292659;
-    border-right: 10px solid #292659;
-}
-
-.quotes {
-    opacity: 0.8;
-    margin-top: 20px;
-    background: url('/assets/images/quotes/quotes.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    min-height: 50px;
+.spacer {
+    min-height: 40px;
 }
 
 /*-----------------------------------------------------------Activities-*/
@@ -437,39 +300,18 @@
     min-height: 200px;
 }
 
-
-#a1ctivities img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    margin-bottom: 30px;
-    border: 3px solid black;
-    border-radius: 50%;
-}
-
-.activities-wrapper {
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    /*padding: 10px 20px;*/
-}
-
-.activities-text-h {
+.text-header--activities {
     font-weight: bold;
     font-style: normal;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.activities-text-p {
-    font-weight: 300;
-    font-style: normal;
+.text-paragraph--activities {
     margin: 0 auto 30px;
-    font-size: 1.4em;
 }
 
-/*----------------------------------------------------------------Video-*/
+/*---------------------------------------------------Activities | Video-*/
 
 .video-style {
     max-width: 600px;
@@ -481,104 +323,24 @@
     font-weight: 300;
     font-style: normal;
     margin: 0 auto 30px;
-    font-size: 1.4em;
 }
 
 /*---------------------------------------------------------------Photos-*/
 
-.photos-wrapper {
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    padding: 10px 20px;
-}
-
-.photos-text-h {
-    font-weight: bold;
-    font-style: normal;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.photos-text-p {
-    font-weight: 300;
-    font-style: normal;
-    margin: 0 auto 30px;
-    font-size: 1.4em;
-}
-
-.gallery {
-    max-width: 830px;
+.carousel-wrapper {
     padding: 0;
 }
 
-.gallery .list-inline {
-    margin-left: 0;
-}
-
-#photos img {
-    max-height: 700px;
-}
-
-.thumbnail:active,
-.thumbnail:focus,
-.thumbnail {
-    margin: 0 15px 20px;
-    background-color: inherit;
-    border: 2px solid black;
-    border-radius: 10px;
-    transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    opacity: 1;
-}
-
-.tn-overlay {
-    opacity: 0;
-    position: absolute;
-    top: 30%;
-    left: 45%;
-    font-size: 30px;
-    color: #fff5cc;
-    transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    pointer-events: none;
-}
-
-.carousel-text {
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.carousel-control.left,
-.carousel-control.right {
+.carousel-wrapper .left,
+.carousel-wrapper .right {
     color: #fff5cc;
     opacity: 1;
     transition: .5s;
 }
 
-.carousel-control.left:hover,
-.carousel-control.right:hover {
+.carousel-wrapper .left:hover,
+.carousel-wrapper .right:hover {
     color: #dbcc93;
-}
-
-
-
-.pic-wrapper {
-    position: relative;
-}
-
-.pic-wrapper:hover .thumbnail {
-    cursor: pointer;
-    opacity: 0.4;
-}
-
-.pic-wrapper:hover .tn-overlay {
-    opacity: 1;
 }
 
 /* Photos Version 2! */
@@ -643,27 +405,6 @@
     background: url('/assets/images/photos/i15.jpg');
 }
 
-.pic-i16 {
-    background: url('/assets/images/photos/i16.jpg');
-}
-
-.pic-i17 {
-    background: url('/assets/images/photos/i17.jpg');
-}
-
-.pic-i18 {
-    background: url('/assets/images/photos/i18.jpg');
-}
-
-.pic-i19 {
-    background: url('/assets/images/photos/i19.jpg');
-}
-
-.pic-i20 {
-    background: url('/assets/images/photos/i20.jpg');
-}
-
-
 .pic-style {
     background-repeat: no-repeat;
     background-size: cover;
@@ -671,10 +412,127 @@
     min-height: calc(100vh - 150px);
 }
 
+/*-----------------------------------------------------Reports | OFSTED-*/
+
+.reports-min-height-wrapper {
+    min-height: calc(100vh - 200px);
+}
+
+.ofsted-wrapper {
+    margin: 50px auto;
+}
+
+.ofsted-pic {
+    background: url('/assets/images/ofsted_grade.png');
+    min-height: 200px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto 50px auto;
+
+}
+
+.text-wrapper--reports {
+    color: #fff;
+    margin: 30px auto;
+}
+
+.ofsted-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn-outline-ofsted,
+.btn-outline-ofsted:focus {
+    color: #fff;
+    background-color: #292659;
+    border-color: #fff;
+    font-weight: bold;
+    transition: .3s;
+    letter-spacing: 0.1em;
+    outline: none;
+    margin: 10px;
+}
+
+.btn-outline-ofsted:hover,
+.btn-outline-ofsted:active,
+.btn-outline-ofsted:active:focus {
+    background: #fff;
+    color: #292659;
+    outline: none;
+}
+
+/*-----------------------------------------------Reports | Testimonials-*/
+
+.testimonials-wrapper {
+    margin-bottom: 0;
+}
+
+.text-header--testimonials {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.testimonials-pic-one {
+    background: url('/assets/images/quotes/q1.jpg')
+}
+
+.testimonials-pic-two {
+    background: url('/assets/images/quotes/q2.jpg')
+}
+
+.testimonials-pic-three {
+    background: url('/assets/images/quotes/q3.jpg')
+}
+
+.testimonials-pic-four {
+    background: url('/assets/images/quotes/q4.jpg')
+}
+
+.testimonials-pic-style {
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    min-height: 200px;
+    border: none;
+}
+
+.testimonials-text-box {
+    color: #fff;
+    background-color: #292659;
+    margin: 0;
+    min-height: 100px;
+    border: none;
+}
+
+.quotes {
+    opacity: 0.8;
+    margin-top: 20px;
+    background: url('/assets/images/quotes/quotes.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 50px;
+}
+
 /*--------------------------------------------------------------Contact-*/
 
-#contact {
+.contact {
     min-height: calc(100vh - 150px);
+}
+
+.contact-text-wrapper {
+    margin: 20px;
+}
+
+.text-header--contact {
+    font-weight: bold;
+}
+
+.contact-divider {
+    margin: 40px auto;
+    border-color: #ffe8cc;
 }
 
 .contact-form {
@@ -682,30 +540,13 @@
     text-align: left;
 }
 
+.form-body {
+    font-size: 0.8em;
+}
+
 .contact-form .form-control {
     background-color: #fffae6;
     border-color: #999;
-}
-
-.contact-text-wrapper {
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 20px;
-}
-
-.contact-text-h {
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.contact-text-p {
-    font-size: 1.4em;
-}
-
-#contact hr {
-    margin: 40px auto;
-    border-color: #ffe8cc;
 }
 
 form i {
@@ -720,9 +561,9 @@ form i {
 
 .btn-outline-send,
 .btn-outline-send:focus {
-    color: #01d432;
+    color: #48734b;
     background-color: #fff5cc;
-    border-color: #01d432;
+    border-color: #48734b;
     font-weight: bold;
     transition: .3s;
     letter-spacing: 0.1em;
@@ -732,7 +573,7 @@ form i {
 .btn-outline-send:hover,
 .btn-outline-send:active,
 .btn-outline-send:active:focus {
-    background: #01d432;
+    background: #48734b;
     color: #fff5cc;
     outline: none;
 }
@@ -755,8 +596,6 @@ form i {
     color: #fff5cc;
     outline: none;
 }
-
-
 
 /*---------------------------------------------------------------Footer-*/
 
@@ -785,7 +624,6 @@ form i {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    /*transition: 0.5s ease-in-out;*/
     transition: all .3s ease-in-out;
 }
 
@@ -810,125 +648,58 @@ form i {
     align-items: center;
 }
 
-.menu-padding {
-    min-height: 50px;
-}
-
-/* Not supported in Edge or Safari */
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    position: relative;
-}
-
 /*--------------------------------------------------------Media Queries-*/
 
 @media (min-width: 768px) {
-    .q--modal:before {
-        display: inline-block;
-        vertical-align: middle;
-        content: " ";
-        height: 100%;
+    .navbar-nav {
+        padding: 0;
+    }
+    .services-box-wrapper {
+        padding: 30px 20px;
+        border-right: 10px solid #432659;
+        border-left: 10px solid #432659;
+    }
+    .ofsted-pic {
+        min-height: 300px;
+    }
+    .reports-min-height-wrapper {
+        min-height: calc(100vh - 250px);
     }
     .testimonials-text-box {
         color: #292659;
         background-color: #fff;
-    }
-}
-
-@media (max-width: 767px) {
-    .modal-dialog {
-        width: 80%;
-    }
-    .thumbnail {
-        margin: 0 10px 20px;
-    }
-    /* Allows 2 colums of photos on larger screen mobiles */
-    .gallery .list-inline {
-        margin: 0 -15px 10px -15px;
-    }
-    /* Forces contact modal to top at this width, but all other modals
-    remain centered */
-    #contact-modal .modal:before {
-        display: inline-block;
-        vertical-align: top;
-        content: " ";
-        height: 100%;
-    }
-    .ofsted-pic {
-        min-height: 200px;
+        border-top: 4px solid #292659;
+        border-bottom: 4px solid #292659;
+        border-left: 10px solid #292659;
+        border-right: 10px solid #292659;
+        min-height: 320px;
     }
     .testimonials-wrapper {
-        margin-bottom: 0;
-    }
-    .testimonials-text-box {
-        min-height: 100px;
-        border: none;
+        margin-bottom: 50px;
     }
     .testimonials-pic-style {
-        border: none;
-    }
-    /* Removes 50px space under testimonials*/
-    .reports-min-height-wrapper {
-        min-height: calc(100vh - 200px);
-    }
-}
-
-@media (max-width: 991px) {
-    .tina-pic {
-        margin-bottom: 0;
-    }
-    .about-text-wrapper,
-    .ofsted-text-wrapper {
-        margin-top: 0;
-    }
-    .activities-text-p {
-        text-align: center;
-    }
-}
-
-@media (min-width: 768px) {
-    #photos .modal-dialog {
-        width: auto;
-        max-width: 700px;
-    }
-    .navbar-nav {
-        padding: 0;
+        border-top: 4px solid #292659;
+        border-bottom: 4px solid #292659;
+        border-left: 10px solid #292659;
+        border-right: 10px solid #292659;
     }
 }
 
 @media (min-width: 992px) {
-    #photos .modal-dialog {
-        width: auto;
-        max-width: 9000px
-    }
     .tina-pic {
         min-height: 300px;
+        margin: 50px 10px;
+    }
+    .about-text-wrapper {
+        margin: 50px 20px;
     }
 }
 
 @media (min-width: 1200px) {
-    #photos .modal-dialog {
-        width: auto;
-        max-width: 1000px
-    }
-    .video-text-p {
-        width: 50%;
+    .video-text-width {
+        width: 80%;
     }
     .tina-pic {
         min-height: 350px;
     }
-}
-
-/*------------------------------------------------------------Misc Crap-*/
-
-.tiny-space {
-    min-height: 50px;
-}
-
-.small-space {
-    min-height: 300px;
 }
