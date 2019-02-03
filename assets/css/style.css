@@ -26,6 +26,11 @@ body {
     min-height: 50px;
 }
 
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*---------------------------------------------------------------Colors-*/
 
 .bg-color-black {
@@ -145,14 +150,13 @@ body {
 /*----------------------------------------------Home | Background Image-*/
 
 .bg-fixed {
-    background-image: url("/assets/images/bg.jpg");
+    background: url("/assets/images/bg.jpg") center / cover;
     min-height: 100vh;
-    background-size: cover;
-    background-position: center;
     position: fixed;
     width: 100%;
     z-index: -2;
 }
+
 /*--------------------------------------------------------------Landing-*/
 
 .landing {
@@ -180,14 +184,22 @@ body {
     margin: 30px auto;
 }
 
+.clear-tel-style,
+.clear-tel-style:hover,
+.clear-tel-style:active,
+.clear-tel-style:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
 .btn-outline-get-in-touch,
 .btn-outline-get-in-touch:focus {
     color: #000;
-    background-color: #fff5cc;
-    border-color: #fff5cc;
+    background-color: #fff;
+    border-color: #604873;
     border-radius: 10px;
     font-weight: bold;
-    transition: .3s;
+    transition: .35s;
     letter-spacing: 0.1em;
     outline: none;
     border-width: 3px;
@@ -197,7 +209,7 @@ body {
 .btn-outline-get-in-touch:active,
 .btn-outline-get-in-touch:active:focus {
     background: transparent;
-    color: #fff5cc;
+    color: #fff;
     outline: none;
 }
 
@@ -205,11 +217,11 @@ body {
     font-size: 4em;
     margin-top: 20px;
     color: #fff;
-    transition: 1s;
+    transition: 0.7s;
 }
 
 .intro a .down-arrows:hover {
-    color: #fff5cc;
+    color: #432659;
     transform: translate(0, 10px);
 }
 
@@ -223,17 +235,15 @@ body {
 }
 
 .tina-pic {
-    background: url('/assets/images/tina_profile.png');
+    background: url('/assets/images/tina_profile.png') top / contain no-repeat;
     min-height: 250px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
     margin: 50px 10px 10px 10px;
 }
 
 .about-text-wrapper {
     margin: 0 20px 50px 20px;
     color: #fff;
+    text-align: center;
 }
 
 .text-header--about {
@@ -343,72 +353,67 @@ body {
     color: #dbcc93;
 }
 
-/* Photos Version 2! */
-
 .pic-i1 {
-    background: url('/assets/images/photos/i1.jpg');
+    background: url('/assets/images/photos/tots_pic_1.jpg');
 }
 
 .pic-i2 {
-    background: url('/assets/images/photos/i2.jpg');
+    background: url('/assets/images/photos/tots_pic_2.jpg');
 }
 
 .pic-i3 {
-    background: url('/assets/images/photos/i3.jpg');
+    background: url('/assets/images/photos/tots_pic_3.jpg');
 }
 
 .pic-i4 {
-    background: url('/assets/images/photos/i4.jpg');
+    background: url('/assets/images/photos/tots_pic_4.jpg');
 }
 
 .pic-i5 {
-    background: url('/assets/images/photos/i5.jpg');
+    background: url('/assets/images/photos/tots_pic_5.jpg');
 }
 
 .pic-i6 {
-    background: url('/assets/images/photos/i6.jpg');
+    background: url('/assets/images/photos/tots_pic_6.jpg');
 }
 
 .pic-i7 {
-    background: url('/assets/images/photos/i7.jpg');
+    background: url('/assets/images/photos/tots_pic_7.jpg');
 }
 
 .pic-i8 {
-    background: url('/assets/images/photos/i8.jpg');
+    background: url('/assets/images/photos/tots_pic_8.jpg');
 }
 
 .pic-i9 {
-    background: url('/assets/images/photos/i9.jpg');
+    background: url('/assets/images/photos/tots_pic_9.jpg');
 }
 
 .pic-i10 {
-    background: url('/assets/images/photos/i10.jpg');
+    background: url('/assets/images/photos/tots_pic_10.jpg');
 }
 
 .pic-i11 {
-    background: url('/assets/images/photos/i11.jpg');
+    background: url('/assets/images/photos/tots_pic_11.jpg');
 }
 
 .pic-i12 {
-    background: url('/assets/images/photos/i12.jpg');
+    background: url('/assets/images/photos/tots_pic_12.jpg');
 }
 
 .pic-i13 {
-    background: url('/assets/images/photos/i13.jpg');
+    background: url('/assets/images/photos/tots_pic_13.jpg');
 }
 
 .pic-i14 {
-    background: url('/assets/images/photos/i14.jpg');
+    background: url('/assets/images/photos/tots_pic_14.jpg');
 }
 
-.pic-i15 {
-    background: url('/assets/images/photos/i15.jpg');
-}
 
 .pic-style {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     min-height: calc(100vh - 150px);
 }
 
@@ -422,12 +427,10 @@ body {
     margin: 50px auto;
 }
 
+
 .ofsted-pic {
-    background: url('/assets/images/ofsted_grade.png');
+    background: url('/assets/images/ofsted_grade.png') top / contain no-repeat;
     min-height: 200px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
     margin: 0 auto 50px auto;
 
 }
@@ -475,19 +478,19 @@ body {
 }
 
 .testimonials-pic-one {
-    background: url('/assets/images/quotes/q1.jpg')
+    background: url('/assets/images/quotes/quote_1.jpg')
 }
 
 .testimonials-pic-two {
-    background: url('/assets/images/quotes/q2.jpg')
+    background: url('/assets/images/quotes/quote_2.jpg')
 }
 
 .testimonials-pic-three {
-    background: url('/assets/images/quotes/q3.jpg')
+    background: url('/assets/images/quotes/quote_3.jpg')
 }
 
 .testimonials-pic-four {
-    background: url('/assets/images/quotes/q4.jpg')
+    background: url('/assets/images/quotes/quote_4.jpg')
 }
 
 .testimonials-pic-style {
@@ -509,10 +512,7 @@ body {
 .quotes {
     opacity: 0.8;
     margin-top: 20px;
-    background: url('/assets/images/quotes/quotes.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background: url('/assets/images/quotes/quotes.png') center / contain no-repeat;
     min-height: 50px;
 }
 
@@ -523,7 +523,7 @@ body {
 }
 
 .contact-text-wrapper {
-    margin: 20px;
+    margin: 20px 0px;
 }
 
 .text-header--contact {
@@ -632,23 +632,7 @@ form i {
     transform: scale(1.2)
 }
 
-
-/*--------------------------------------------------------House Keeping-*/
-
-.row {
-    display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    flex-wrap: wrap;
-}
-
-.flex-row {
-    display: flex;
-    align-items: center;
-}
-
-/*--------------------------------------------------------Media Queries-*/
+/*----------------------------------------------Media Queries - General-*/
 
 @media (min-width: 768px) {
     .navbar-nav {
@@ -688,10 +672,13 @@ form i {
 @media (min-width: 992px) {
     .tina-pic {
         min-height: 300px;
-        margin: 50px 10px;
     }
     .about-text-wrapper {
         margin: 50px 20px;
+    }
+    .ofsted-header {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -701,5 +688,70 @@ form i {
     }
     .tina-pic {
         min-height: 350px;
+        margin: 50px 10px;
     }
+}
+
+@media (min-width: 2000px) {
+    #activities,
+    #video {
+        margin: 0 auto;
+        max-width: 2000px;
+    }
+}
+
+/*-----------------------------------------------Media Queries - Photos-*/
+
+@media (min-width: 768px) {
+    .bg-fixed {
+        background-image: url("/assets/images/bg_w.jpg");
+    }
+    .pic-i1 {
+        background: url('/assets/images/photos/tots_pic_1w.jpg');
+    }
+    .pic-i2 {
+        background: url('/assets/images/photos/tots_pic_2w.jpg');
+    }
+    .pic-i3 {
+        background: url('/assets/images/photos/tots_pic_3w.jpg');
+    }
+    .pic-i4 {
+        background: url('/assets/images/photos/tots_pic_4w.jpg');
+    }
+    .pic-i5 {
+        background: url('/assets/images/photos/tots_pic_5w.jpg');
+    }
+    .pic-i6 {
+        background: url('/assets/images/photos/tots_pic_6w.jpg');
+    }
+    .pic-i7 {
+        background: url('/assets/images/photos/tots_pic_7w.jpg');
+    }
+    .pic-i8 {
+        background: url('/assets/images/photos/tots_pic_8w.jpg');
+    }
+    .pic-i9 {
+        background: url('/assets/images/photos/tots_pic_9w.jpg');
+    }
+    .pic-i10 {
+        background: url('/assets/images/photos/tots_pic_10w.jpg');
+    }
+    .pic-i11 {
+        background: url('/assets/images/photos/tots_pic_11w.jpg');
+    }
+    .pic-i12 {
+        background: url('/assets/images/photos/tots_pic_12w.jpg');
+    }
+    .pic-i13 {
+        background: url('/assets/images/photos/tots_pic_13w.jpg');
+    }
+    .pic-i14 {
+        background: url('/assets/images/photos/tots_pic_14w.jpg');
+    }
+    .pic-style {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
 }
