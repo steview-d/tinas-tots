@@ -10,14 +10,14 @@ body {
 }
 
 .text-paragraph {
-    font-family: capucine-web, sans-serif;
+    font-family: "capucine-web", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.4em;
 }
 
 .text-header {
-    font-family: capucine-web, sans-serif;
+    font-family: "capucine-web", sans-serif;
     font-weight: bold;
     font-style: normal;
 }
@@ -73,10 +73,14 @@ body {
     background-color: #432659;
 }
 
+.bg-color-light-grey {
+    background-color: #eee;
+}
+
 /*-----------------------------------------------------------Navigation-*/
 
 .navbar {
-    font-family: chauncy-pro, sans-serif;
+    font-family: "chauncy-pro", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.9em;
@@ -168,7 +172,7 @@ body {
 
 .jumbotron {
     background-color: transparent;
-    font-family: balloon-urw, sans-serif;
+    font-family: "balloon-urw", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #fff;
@@ -194,12 +198,12 @@ body {
 
 .btn-outline-get-in-touch,
 .btn-outline-get-in-touch:focus {
-    color: #000;
-    background-color: #fff;
-    border-color: #604873;
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
     border-radius: 10px;
     font-weight: bold;
-    transition: .35s;
+    transition: .5s;
     letter-spacing: 0.1em;
     outline: none;
     border-width: 3px;
@@ -208,8 +212,9 @@ body {
 .btn-outline-get-in-touch:hover,
 .btn-outline-get-in-touch:active,
 .btn-outline-get-in-touch:active:focus {
-    background: transparent;
-    color: #fff;
+    background: #fff;
+    color: #000;
+    border-color: #ddd;
     outline: none;
 }
 
@@ -324,8 +329,8 @@ body {
 /*---------------------------------------------------Activities | Video-*/
 
 .video-style {
-    max-width: 600px;
-    width: 100%;
+
+    width: auto;
     margin: 10px auto 20px;
 }
 
@@ -333,6 +338,22 @@ body {
     font-weight: 300;
     font-style: normal;
     margin: 0 auto 30px;
+}
+
+.video-container {
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 100%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 50%;
 }
 
 /*---------------------------------------------------------------Photos-*/
@@ -435,6 +456,11 @@ body {
 
 }
 
+.text-paragraph--ofsted {
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
 .text-wrapper--reports {
     color: #fff;
     margin: 30px auto;
@@ -522,8 +548,14 @@ body {
     min-height: calc(100vh - 150px);
 }
 
+.contact-pic {
+    background: url('/assets/images/tina_contact.png') top / contain no-repeat;
+    min-height: 200px;
+    margin: 50px 10px 10px 10px;
+}
+
 .contact-text-wrapper {
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
 .text-header--contact {
@@ -532,7 +564,7 @@ body {
 
 .contact-divider {
     margin: 40px auto;
-    border-color: #ffe8cc;
+    border-color: #bbb;
 }
 
 .contact-form {
@@ -540,13 +572,27 @@ body {
     text-align: left;
 }
 
+.contact-box-spacing {
+    position: relative;
+    margin-bottom: 1px;
+}
+
 .form-body {
     font-size: 0.8em;
 }
 
 .contact-form .form-control {
-    background-color: #fffae6;
-    border-color: #999;
+    border: none;
+}
+
+.indicates-req-field {
+    margin-top: 10px;
+}
+
+.req-box {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
 }
 
 form i {
@@ -562,7 +608,7 @@ form i {
 .btn-outline-send,
 .btn-outline-send:focus {
     color: #48734b;
-    background-color: #fff5cc;
+    background-color: #eee;
     border-color: #48734b;
     font-weight: bold;
     transition: .3s;
@@ -574,14 +620,14 @@ form i {
 .btn-outline-send:active,
 .btn-outline-send:active:focus {
     background: #48734b;
-    color: #fff5cc;
+    color: #eee;
     outline: none;
 }
 
 .btn-outline-reset,
 .btn-outline-reset:focus {
     color: #f0ad4e;
-    background-color: #fff5cc;
+    background-color: #eee;
     border-color: #f0ad4e;
     font-weight: bold;
     transition: .3s;
@@ -593,7 +639,7 @@ form i {
 .btn-outline-reset:active,
 .btn-outline-reset:active:focus {
     background: #f0ad4e;
-    color: #fff5cc;
+    color: #eee;
     outline: none;
 }
 
@@ -602,13 +648,13 @@ form i {
 .footer-style {
     background-color: #000;
     color: #fff;
-    font-family: capucine-web, sans-serif;
+    font-family: "capucine-web", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
 .social {
-    padding: 10px;
+    padding: 20px 10px 0 10px;
     margin: 10px 0 0;
 }
 
@@ -621,9 +667,7 @@ form i {
     height: 40px;
     color: #fff;
     font-size: 24px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+
     transition: all .3s ease-in-out;
 }
 
