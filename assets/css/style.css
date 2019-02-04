@@ -154,7 +154,7 @@ body {
 /*----------------------------------------------Home | Background Image-*/
 
 .bg-fixed {
-    background: url("/assets/images/bg.jpg") center / cover;
+    background: url("../images/bg.jpg") center / cover;
     min-height: 100vh;
     position: fixed;
     width: 100%;
@@ -240,7 +240,7 @@ body {
 }
 
 .tina-pic {
-    background: url('/assets/images/tina_profile.png') top / contain no-repeat;
+    background: url('../images/tina_profile.png') top / contain no-repeat;
     min-height: 250px;
     margin: 50px 10px 10px 10px;
 }
@@ -293,19 +293,19 @@ body {
 /*-----------------------------------------------------------Activities-*/
 
 .bg-pic-indoors {
-    background: url('/assets/images/activities/indoors.jpg');
+    background: url('../images/activities/indoors.jpg');
 }
 
 .bg-pic-outdoors {
-    background: url('/assets/images/activities/outdoors.jpg');
+    background: url('../images/activities/outdoors.jpg');
 }
 
 .bg-pic-soft-play {
-    background: url('/assets/images/activities/soft-play.jpg');
+    background: url('../images/activities/soft-play.jpg');
 }
 
 .bg-pic-adventures {
-    background: url('/assets/images/activities/adventures.jpg');
+    background: url('../images/activities/adventures.jpg');
 }
 
 .activities-pic-style {
@@ -375,59 +375,59 @@ body {
 }
 
 .pic-i1 {
-    background: url('/assets/images/photos/tots_pic_1.jpg');
+    background: url('../images/photos/tots_pic_1.jpg');
 }
 
 .pic-i2 {
-    background: url('/assets/images/photos/tots_pic_2.jpg');
+    background: url('../images/photos/tots_pic_2.jpg');
 }
 
 .pic-i3 {
-    background: url('/assets/images/photos/tots_pic_3.jpg');
+    background: url('../images/photos/tots_pic_3.jpg');
 }
 
 .pic-i4 {
-    background: url('/assets/images/photos/tots_pic_4.jpg');
+    background: url('../images/photos/tots_pic_4.jpg');
 }
 
 .pic-i5 {
-    background: url('/assets/images/photos/tots_pic_5.jpg');
+    background: url('../images/photos/tots_pic_5.jpg');
 }
 
 .pic-i6 {
-    background: url('/assets/images/photos/tots_pic_6.jpg');
+    background: url('../images/photos/tots_pic_6.jpg');
 }
 
 .pic-i7 {
-    background: url('/assets/images/photos/tots_pic_7.jpg');
+    background: url('../images/photos/tots_pic_7.jpg');
 }
 
 .pic-i8 {
-    background: url('/assets/images/photos/tots_pic_8.jpg');
+    background: url('../images/photos/tots_pic_8.jpg');
 }
 
 .pic-i9 {
-    background: url('/assets/images/photos/tots_pic_9.jpg');
+    background: url('../images/photos/tots_pic_9.jpg');
 }
 
 .pic-i10 {
-    background: url('/assets/images/photos/tots_pic_10.jpg');
+    background: url('../images/photos/tots_pic_10.jpg');
 }
 
 .pic-i11 {
-    background: url('/assets/images/photos/tots_pic_11.jpg');
+    background: url('../images/photos/tots_pic_11.jpg');
 }
 
 .pic-i12 {
-    background: url('/assets/images/photos/tots_pic_12.jpg');
+    background: url('../images/photos/tots_pic_12.jpg');
 }
 
 .pic-i13 {
-    background: url('/assets/images/photos/tots_pic_13.jpg');
+    background: url('../images/photos/tots_pic_13.jpg');
 }
 
 .pic-i14 {
-    background: url('/assets/images/photos/tots_pic_14.jpg');
+    background: url('../images/photos/tots_pic_14.jpg');
 }
 
 
@@ -450,7 +450,7 @@ body {
 
 
 .ofsted-pic {
-    background: url('/assets/images/ofsted_grade.png') top / contain no-repeat;
+    background: url('../images/ofsted_grade.png') top / contain no-repeat;
     min-height: 200px;
     margin: 0 auto 50px auto;
 
@@ -504,19 +504,19 @@ body {
 }
 
 .testimonials-pic-one {
-    background: url('/assets/images/quotes/quote_1.jpg')
+    background: url('../images/quotes/quote_1.jpg')
 }
 
 .testimonials-pic-two {
-    background: url('/assets/images/quotes/quote_2.jpg')
+    background: url('../images/quotes/quote_2.jpg')
 }
 
 .testimonials-pic-three {
-    background: url('/assets/images/quotes/quote_3.jpg')
+    background: url('../images/quotes/quote_3.jpg')
 }
 
 .testimonials-pic-four {
-    background: url('/assets/images/quotes/quote_4.jpg')
+    background: url('../images/quotes/quote_4.jpg')
 }
 
 .testimonials-pic-style {
@@ -538,7 +538,7 @@ body {
 .quotes {
     opacity: 0.8;
     margin-top: 20px;
-    background: url('/assets/images/quotes/quotes.png') center / contain no-repeat;
+    background: url('../images/quotes/quotes.png') center / contain no-repeat;
     min-height: 50px;
 }
 
@@ -549,7 +549,7 @@ body {
 }
 
 .contact-pic {
-    background: url('/assets/images/tina_contact.png') top / contain no-repeat;
+    background: url('../images/tina_contact.png') top / contain no-repeat;
     min-height: 200px;
     margin: 50px 10px 10px 10px;
 }
@@ -748,49 +748,49 @@ form i {
 
 @media (min-width: 768px) {
     .bg-fixed {
-        background-image: url("/assets/images/bg_w.jpg");
+        background-image: url("../images/bg_w.jpg");
     }
     .pic-i1 {
-        background: url('/assets/images/photos/tots_pic_1w.jpg');
+        background: url('../images/photos/tots_pic_1w.jpg');
     }
     .pic-i2 {
-        background: url('/assets/images/photos/tots_pic_2w.jpg');
+        background: url('../images/photos/tots_pic_2w.jpg');
     }
     .pic-i3 {
-        background: url('/assets/images/photos/tots_pic_3w.jpg');
+        background: url('../images/photos/tots_pic_3w.jpg');
     }
     .pic-i4 {
-        background: url('/assets/images/photos/tots_pic_4w.jpg');
+        background: url('../images/photos/tots_pic_4w.jpg');
     }
     .pic-i5 {
-        background: url('/assets/images/photos/tots_pic_5w.jpg');
+        background: url('../images/photos/tots_pic_5w.jpg');
     }
     .pic-i6 {
-        background: url('/assets/images/photos/tots_pic_6w.jpg');
+        background: url('../images/photos/tots_pic_6w.jpg');
     }
     .pic-i7 {
-        background: url('/assets/images/photos/tots_pic_7w.jpg');
+        background: url('../images/photos/tots_pic_7w.jpg');
     }
     .pic-i8 {
-        background: url('/assets/images/photos/tots_pic_8w.jpg');
+        background: url('../images/photos/tots_pic_8w.jpg');
     }
     .pic-i9 {
-        background: url('/assets/images/photos/tots_pic_9w.jpg');
+        background: url('../images/photos/tots_pic_9w.jpg');
     }
     .pic-i10 {
-        background: url('/assets/images/photos/tots_pic_10w.jpg');
+        background: url('../images/photos/tots_pic_10w.jpg');
     }
     .pic-i11 {
-        background: url('/assets/images/photos/tots_pic_11w.jpg');
+        background: url('../images/photos/tots_pic_11w.jpg');
     }
     .pic-i12 {
-        background: url('/assets/images/photos/tots_pic_12w.jpg');
+        background: url('../images/photos/tots_pic_12w.jpg');
     }
     .pic-i13 {
-        background: url('/assets/images/photos/tots_pic_13w.jpg');
+        background: url('../images/photos/tots_pic_13w.jpg');
     }
     .pic-i14 {
-        background: url('/assets/images/photos/tots_pic_14w.jpg');
+        background: url('../images/photos/tots_pic_14w.jpg');
     }
     .pic-style {
         background-repeat: no-repeat;
