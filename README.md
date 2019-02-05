@@ -14,13 +14,13 @@ The site should not provide every last detail and instead provide enough informa
 The site should provide multiple ways of making contact, and this information should be easily accessible from any part of the site.
 
 
-#### User Stories
+### User Stories
 * As a parent looking for child care for my child, I want to be able to see if Tina's Tots meets mine and my child's needs.
 * As a parent interested in Tina's Tots, I want to be able to communicate with Tina to ask questions and / or book her services.
 * As the owner of Tina's Tots, I want to be able to show what I can offer to parents and children in a clear and concise format.
 * As the owner of Tina's Tots, I want potential customers to be able to get in touch with me quickly, easily, and in a way that is most convenient for them.
 
-#### Wireframes
+### Wireframes
 
 The wireframes below are the original ones created at the start of this project.
 Whilst the overall feel is mostly similar, the current version does have some differences to what was initially planned.
@@ -28,16 +28,17 @@ Whilst the overall feel is mostly similar, the current version does have some di
 The original design was cluttered in places, and this made it hard to read, which led to a poor user experience.
 Most of the changes made have been a move towards a less cluttered and more user-friendly experience.
 
-*ADD WIREFRAMES FROM BALSAMIC - MOBILE & DESKTOP VIEWS OF EACH PAGE*
+#### Mobile
+###### Home / About | Activities | Photos | Reports | Contact
+<img src="assets/images/wireframes/m-home.png" align=top width=170>&nbsp;<img src="assets/images/wireframes/m-activities.png" align=top width=170>&nbsp;<img src="assets/images/wireframes/m-photos.png" align=top width=170>&nbsp;<img src="assets/images/wireframes/m-reports.png" align=top width=170>&nbsp;<img src="assets/images/wireframes/m-contact.png" align=top width=170>
 
-![Home](assets/images/wireframes/d-home.png)
-
-
-<img src="assets/images/wireframes/m-home.png" width=350>&nbsp;<img src="assets/images/wireframes/m-activities.png" width=350>&nbsp;<img src="assets/images/wireframes/m-photos.png" width=350>
+#### Desktop
+###### Home / About | Activities | Photos | Reports | Contact
+<img src="assets/images/wireframes/d-home.png" align=top width=170>&nbsp;<img src="assets/images/wireframes/d-activities.png" align=top width=170>&nbsp;<img src="assets/images/wireframes/d-photos.png" align=top width=170>&nbsp;<img src="assets/images/wireframes/d-reports.png" align=top width=170>&nbsp;<img src="assets/images/wireframes/d-contact.png" align=top width=170>
 
 ## Features
 
-#### Current Features
+### Current Features
 ###### Feature 1 - Navigation bar. 
 - A fixed navigation bar that stays in place when the user scrolls down the page ensuring all parts of the site can be accessed with ease.
 - On widths of less than 768px the navigation bar condenses down in to the 'burger' style to save space.
@@ -74,7 +75,7 @@ Most of the changes made have been a move towards a less cluttered and more user
 ###### Feature 11 - Contact.
 - A short contact form that gives the user the opportunity to pass their details on so Tina can get in touch. It also provides a telephone number, allowing the user to make contact immediately, instead of waiting for a call or email back.
 
-#### Future Features
+### Future Features
 ###### Contact form submission.
 - Currently, the form doesn't do anything with the data submitted.
 
