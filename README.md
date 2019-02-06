@@ -77,7 +77,7 @@ Most of the changes made have been a move towards a less cluttered and more user
 
 ### Future Features
 ###### Contact form submission.
-- Currently, the form doesn't do anything with the data submitted.
+- Currently, the contact form doesn't do anything with the data submitted.
 
 ###### Live chat functionality.
 - The purpose of this site is to allow communication between the user and site owner, so it makes sense to provide as many ways of doing this as possible.
@@ -150,17 +150,19 @@ I have also tested on the following physical devices, and again, no issues have 
 The sites main purpose is to allow the user and owner to contact each other, and this functionality has been tested. There are 2 methods of contact provided.
 
 
-A telephone number.
+###### A telephone number.
 
 - A contact telephone number is displayed in 2 areas of the site - the landing page and contact page
 - When touched on a mobile device, it enters the mobile number into the phone ready to make a call.
 
-A contact form.
+###### A contact form.
 
 - The contact form checks to make sure the 2 required fields are completed - name & telephone number.
 - When submitting, if the user leaves out either of these fields, a message informs the user that the field is required and instructs them to complete it before submitting.
 - The reset button works to clear the form of any data entered.
-- The form is not currently linked to an external server so when the user presses send, the form resets itself.
+
+#### Known Issues
+- The contact form is not currently linked to an external server so when the user presses send, the form resets itself.
 - Implementing this functionality was outside of the scope of this project but will be added at a later date.
 
 ## Deployment
@@ -178,9 +180,9 @@ https://steview-d.github.io/tinas-tots/
 ### Media
 - Photographs used with permission from Tina's Tots.
 - Video of the 'sing-a-long' used with permission from Tina's Tots.
-- OFSTED 'Good' logo used with permission from OFSTED.
+- OFSTED 'Good' logo used with permission from [OFSTED](https://www.gov.uk/government/organisations/ofsted).
 - Pictures from the 'Meet the Parents' section sourced via Google image search. All pictures had full usage rights and were labelled for reuse by Google. 
-- Favicon icon sourced from https://www.freefavicon.com/ and used with permission.
+- Favicon icon sourced from [free favicon](https://www.freefavicon.com/) and used with permission.
 
 ### Acknowledgements
 

@@ -57,6 +57,10 @@ body {
     background-color: #f5b1d4;
 }
 
+.bg-color-purple {
+    background-color: #432659;
+}
+
 .bg-color-light-purple {
     background-color: #d2b1f5;
 }
@@ -67,10 +71,6 @@ body {
 
 .bg-color-dark-blue {
     background-color: #292659;
-}
-
-.bg-color-purple {
-    background-color: #432659;
 }
 
 .bg-color-light-grey {
@@ -232,7 +232,7 @@ body {
 
 /*----------------------------------------------------------------About-*/
 
-.about-link {
+.about-link-anchor {
     display: block;
     height: 50px;
     margin-top: -50px;
@@ -329,31 +329,16 @@ body {
 /*---------------------------------------------------Activities | Video-*/
 
 .video-style {
-
-    width: auto;
     margin: 10px auto 20px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .video-text-p {
     font-weight: 300;
     font-style: normal;
     margin: 0 auto 30px;
-}
-
-.video-container {
-	position: relative;
-	margin: 0 auto;
-	padding-bottom: 100%;
-	padding-top: 25px;
-	height: 0;
-}
-
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 50%;
-    height: 50%;
 }
 
 /*---------------------------------------------------------------Photos-*/
@@ -429,7 +414,6 @@ body {
 .pic-i14 {
     background: url('../images/photos/tots_pic_14.jpg');
 }
-
 
 .pic-style {
     background-repeat: no-repeat;
@@ -538,7 +522,7 @@ body {
 .quotes {
     opacity: 0.8;
     margin-top: 20px;
-    background: url('../images/quotes/quotes.png') center / contain no-repeat;
+    background: url('../images/reports/quotes.png') center / contain no-repeat;
     min-height: 50px;
 }
 
@@ -667,7 +651,6 @@ form i {
     height: 40px;
     color: #fff;
     font-size: 24px;
-
     transition: all .3s ease-in-out;
 }
 
@@ -736,14 +719,6 @@ form i {
     }
 }
 
-@media (min-width: 2000px) {
-    #activities,
-    #video {
-        margin: 0 auto;
-        max-width: 2000px;
-    }
-}
-
 /*-----------------------------------------------Media Queries - Photos-*/
 
 @media (min-width: 768px) {
@@ -797,5 +772,4 @@ form i {
         background-size: cover;
         background-position: center;
     }
-
 }
