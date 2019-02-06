@@ -31,6 +31,10 @@ body {
     flex-wrap: wrap;
 }
 
+.full-height {
+    min-height: calc(100vh - 150px);
+}
+
 /*---------------------------------------------------------------Colors-*/
 
 .bg-color-black {
@@ -527,10 +531,6 @@ body {
 }
 
 /*--------------------------------------------------------------Contact-*/
-
-.contact {
-    min-height: calc(100vh - 150px);
-}
 
 .contact-pic {
     background: url('../images/contact/tina_contact.png') top / contain no-repeat;
